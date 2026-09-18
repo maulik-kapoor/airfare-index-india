@@ -1,0 +1,3239 @@
+{
+  "marketKPIs": {
+    "totalObservations": 1350,
+    "totalRoutes": 12,
+    "totalAirlines": 5,
+    "totalOTAs": 5,
+    "averageFare": 7181.7,
+    "medianFare": 6289,
+    "volatility": 3082.9,
+    "iqr": 3354,
+    "totalAnomalies": 360,
+    "weekdayMedian": 6282,
+    "weekendMedian": 6303,
+    "weekendSurgePct": 0.3
+  },
+  "routes": {
+    "MAA-DEL": {
+      "route": "MAA-DEL",
+      "origin": "MAA",
+      "destination": "DEL",
+      "observationsCount": 111,
+      "historicalMedian": 6534,
+      "historicalMean": 7575.9,
+      "volatility": 3098.5,
+      "iqr": 3607,
+      "q1": 5287,
+      "q3": 8894,
+      "minFare": 3096,
+      "maxFare": 19652,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8154,
+          "avgFare": 9043,
+          "minFare": 6849,
+          "maxFare": 15468,
+          "volatility": 2521,
+          "sampleCount": 22,
+          "changeFromMedian": 24.8
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 7210,
+          "avgFare": 8602,
+          "minFare": 5778,
+          "maxFare": 15186,
+          "volatility": 3160,
+          "sampleCount": 24,
+          "changeFromMedian": 10.3
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5940,
+          "avgFare": 7559,
+          "minFare": 4841,
+          "maxFare": 19652,
+          "volatility": 3493,
+          "sampleCount": 28,
+          "changeFromMedian": -9.1
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5315,
+          "avgFare": 6252,
+          "minFare": 3655,
+          "maxFare": 11559,
+          "volatility": 2328,
+          "sampleCount": 22,
+          "changeFromMedian": -18.7
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 4686,
+          "avgFare": 5825,
+          "minFare": 4227,
+          "maxFare": 11527,
+          "volatility": 2418,
+          "sampleCount": 11,
+          "changeFromMedian": -28.3
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 4466,
+          "avgFare": 5564,
+          "minFare": 3096,
+          "maxFare": 10230,
+          "volatility": 3177,
+          "sampleCount": 4,
+          "changeFromMedian": -31.6
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "IndiGo",
+          "medianFare": 5654,
+          "avgFare": 6903,
+          "minFare": 4227,
+          "count": 22,
+          "priceIndex": 86.5
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 7512,
+          "avgFare": 7941,
+          "minFare": 3096,
+          "count": 26,
+          "priceIndex": 115.0
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6614,
+          "avgFare": 7094,
+          "minFare": 4332,
+          "count": 24,
+          "priceIndex": 101.2
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 6018,
+          "avgFare": 7583,
+          "minFare": 4360,
+          "count": 18,
+          "priceIndex": 92.1
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 6346,
+          "avgFare": 8374,
+          "minFare": 3655,
+          "count": 21,
+          "priceIndex": 97.1
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 6002,
+          "avgFare": 6789,
+          "count": 28,
+          "priceIndex": 91.9
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 6639,
+          "avgFare": 7684,
+          "count": 25,
+          "priceIndex": 101.6
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 6534,
+          "avgFare": 7660,
+          "count": 25,
+          "priceIndex": 100.0
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 7514,
+          "avgFare": 8347,
+          "count": 20,
+          "priceIndex": 115.0
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 7301,
+          "avgFare": 7714,
+          "count": 13,
+          "priceIndex": 111.7
+        }
+      ],
+      "anomaliesCount": 33
+    },
+    "BLR-DEL": {
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "observationsCount": 104,
+      "historicalMedian": 7782,
+      "historicalMean": 8461.6,
+      "volatility": 3187.1,
+      "iqr": 3191,
+      "q1": 6321,
+      "q3": 9512,
+      "minFare": 4400,
+      "maxFare": 17842,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8563,
+          "avgFare": 10359,
+          "minFare": 7376,
+          "maxFare": 17842,
+          "volatility": 3550,
+          "sampleCount": 27,
+          "changeFromMedian": 10.0
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 7827,
+          "avgFare": 8996,
+          "minFare": 6409,
+          "maxFare": 17817,
+          "volatility": 3114,
+          "sampleCount": 29,
+          "changeFromMedian": 0.6
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 6243,
+          "avgFare": 7356,
+          "minFare": 5457,
+          "maxFare": 12929,
+          "volatility": 2283,
+          "sampleCount": 25,
+          "changeFromMedian": -19.8
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5373,
+          "avgFare": 7154,
+          "minFare": 4652,
+          "maxFare": 11685,
+          "volatility": 2618,
+          "sampleCount": 13,
+          "changeFromMedian": -31.0
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 6083,
+          "avgFare": 6256,
+          "minFare": 4775,
+          "maxFare": 8926,
+          "volatility": 1537,
+          "sampleCount": 6,
+          "changeFromMedian": -21.8
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 5250,
+          "avgFare": 6249,
+          "minFare": 4400,
+          "maxFare": 10095,
+          "volatility": 2643,
+          "sampleCount": 4,
+          "changeFromMedian": -32.5
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "SpiceJet",
+          "medianFare": 8338,
+          "avgFare": 8656,
+          "minFare": 4400,
+          "count": 19,
+          "priceIndex": 107.1
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 8266,
+          "avgFare": 9648,
+          "minFare": 5862,
+          "count": 20,
+          "priceIndex": 106.2
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 6923,
+          "avgFare": 7609,
+          "minFare": 4638,
+          "count": 23,
+          "priceIndex": 89.0
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 7760,
+          "avgFare": 8311,
+          "minFare": 4874,
+          "count": 25,
+          "priceIndex": 99.7
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 6774,
+          "avgFare": 8224,
+          "minFare": 5692,
+          "count": 17,
+          "priceIndex": 87.0
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Yatra",
+          "medianFare": 7932,
+          "avgFare": 8584,
+          "count": 22,
+          "priceIndex": 101.9
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 7827,
+          "avgFare": 9515,
+          "count": 15,
+          "priceIndex": 100.6
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 7124,
+          "avgFare": 7026,
+          "count": 22,
+          "priceIndex": 91.6
+        },
+        {
+          "ota": "Airline Direct",
+          "medianFare": 7492,
+          "avgFare": 8579,
+          "count": 24,
+          "priceIndex": 96.3
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 8186,
+          "avgFare": 8951,
+          "count": 21,
+          "priceIndex": 105.2
+        }
+      ],
+      "anomaliesCount": 26
+    },
+    "PNQ-DEL": {
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "observationsCount": 118,
+      "historicalMedian": 5836,
+      "historicalMean": 6653.3,
+      "volatility": 2683.3,
+      "iqr": 2818,
+      "q1": 4670,
+      "q3": 7488,
+      "minFare": 2638,
+      "maxFare": 15020,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 7124,
+          "avgFare": 8633,
+          "minFare": 6006,
+          "maxFare": 15020,
+          "volatility": 2998,
+          "sampleCount": 26,
+          "changeFromMedian": 22.1
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 6175,
+          "avgFare": 7400,
+          "minFare": 3893,
+          "maxFare": 13719,
+          "volatility": 2748,
+          "sampleCount": 26,
+          "changeFromMedian": 5.8
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 4959,
+          "avgFare": 5645,
+          "minFare": 2638,
+          "maxFare": 10166,
+          "volatility": 1899,
+          "sampleCount": 39,
+          "changeFromMedian": -15.0
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 4581,
+          "avgFare": 5082,
+          "minFare": 2911,
+          "maxFare": 9422,
+          "volatility": 1681,
+          "sampleCount": 20,
+          "changeFromMedian": -21.5
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 4910,
+          "avgFare": 6120,
+          "minFare": 4151,
+          "maxFare": 9300,
+          "volatility": 2780,
+          "sampleCount": 3,
+          "changeFromMedian": -15.9
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 7328,
+          "avgFare": 7018,
+          "minFare": 3930,
+          "maxFare": 9489,
+          "volatility": 2304,
+          "sampleCount": 4,
+          "changeFromMedian": 25.6
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Akasa Air",
+          "medianFare": 5559,
+          "avgFare": 5936,
+          "minFare": 4316,
+          "count": 14,
+          "priceIndex": 95.3
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 5035,
+          "avgFare": 5726,
+          "minFare": 3930,
+          "count": 21,
+          "priceIndex": 86.3
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 6427,
+          "avgFare": 7509,
+          "minFare": 2911,
+          "count": 25,
+          "priceIndex": 110.1
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 4793,
+          "avgFare": 6099,
+          "minFare": 2638,
+          "count": 31,
+          "priceIndex": 82.1
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 6999,
+          "avgFare": 7591,
+          "minFare": 4910,
+          "count": 27,
+          "priceIndex": 119.9
+        }
+      ],
+      "otas": [
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 6187,
+          "avgFare": 6669,
+          "count": 31,
+          "priceIndex": 106.0
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 5825,
+          "avgFare": 6796,
+          "count": 19,
+          "priceIndex": 99.8
+        },
+        {
+          "ota": "Airline Direct",
+          "medianFare": 5708,
+          "avgFare": 6509,
+          "count": 21,
+          "priceIndex": 97.8
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 5778,
+          "avgFare": 6325,
+          "count": 23,
+          "priceIndex": 99.0
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6058,
+          "avgFare": 6960,
+          "count": 24,
+          "priceIndex": 103.8
+        }
+      ],
+      "anomaliesCount": 30
+    },
+    "CCU-DEL": {
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "observationsCount": 120,
+      "historicalMedian": 6399,
+      "historicalMean": 7535.9,
+      "volatility": 3455.9,
+      "iqr": 4052,
+      "q1": 5006,
+      "q3": 9058,
+      "minFare": 2590,
+      "maxFare": 17918,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8206,
+          "avgFare": 9945,
+          "minFare": 6205,
+          "maxFare": 17918,
+          "volatility": 3850,
+          "sampleCount": 27,
+          "changeFromMedian": 28.2
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 7154,
+          "avgFare": 8480,
+          "minFare": 5411,
+          "maxFare": 13990,
+          "volatility": 2904,
+          "sampleCount": 27,
+          "changeFromMedian": 11.8
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5468,
+          "avgFare": 6917,
+          "minFare": 4737,
+          "maxFare": 17852,
+          "volatility": 3028,
+          "sampleCount": 27,
+          "changeFromMedian": -14.5
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 4722,
+          "avgFare": 6079,
+          "minFare": 4155,
+          "maxFare": 15813,
+          "volatility": 2888,
+          "sampleCount": 21,
+          "changeFromMedian": -26.2
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 4528,
+          "avgFare": 4760,
+          "minFare": 2590,
+          "maxFare": 9541,
+          "volatility": 1720,
+          "sampleCount": 11,
+          "changeFromMedian": -29.2
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 4783,
+          "avgFare": 5718,
+          "minFare": 3680,
+          "maxFare": 10697,
+          "volatility": 2529,
+          "sampleCount": 7,
+          "changeFromMedian": -25.3
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6166,
+          "avgFare": 6601,
+          "minFare": 3680,
+          "count": 26,
+          "priceIndex": 96.4
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 6926,
+          "avgFare": 8057,
+          "minFare": 4532,
+          "count": 25,
+          "priceIndex": 108.2
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 8390,
+          "avgFare": 8919,
+          "minFare": 5152,
+          "count": 22,
+          "priceIndex": 131.1
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 6044,
+          "avgFare": 6747,
+          "minFare": 2590,
+          "count": 25,
+          "priceIndex": 94.5
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 5440,
+          "avgFare": 7563,
+          "minFare": 3870,
+          "count": 22,
+          "priceIndex": 85.0
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 5920,
+          "avgFare": 7150,
+          "count": 28,
+          "priceIndex": 92.5
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 5518,
+          "avgFare": 6921,
+          "count": 23,
+          "priceIndex": 86.2
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6444,
+          "avgFare": 7009,
+          "count": 26,
+          "priceIndex": 100.7
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 9079,
+          "avgFare": 9540,
+          "count": 27,
+          "priceIndex": 141.9
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 5510,
+          "avgFare": 6569,
+          "count": 16,
+          "priceIndex": 86.1
+        }
+      ],
+      "anomaliesCount": 36
+    },
+    "BOM-BLR": {
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "observationsCount": 117,
+      "historicalMedian": 4772,
+      "historicalMean": 5448.4,
+      "volatility": 2360.0,
+      "iqr": 2535,
+      "q1": 3803,
+      "q3": 6338,
+      "minFare": 2482,
+      "maxFare": 19866,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 6008,
+          "avgFare": 6784,
+          "minFare": 3529,
+          "maxFare": 11486,
+          "volatility": 2416,
+          "sampleCount": 27,
+          "changeFromMedian": 25.9
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 5168,
+          "avgFare": 6254,
+          "minFare": 3158,
+          "maxFare": 19866,
+          "volatility": 3525,
+          "sampleCount": 21,
+          "changeFromMedian": 8.3
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 4314,
+          "avgFare": 4904,
+          "minFare": 3374,
+          "maxFare": 7794,
+          "volatility": 1407,
+          "sampleCount": 33,
+          "changeFromMedian": -9.6
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 3803,
+          "avgFare": 4637,
+          "minFare": 3196,
+          "maxFare": 7644,
+          "volatility": 1597,
+          "sampleCount": 17,
+          "changeFromMedian": -20.3
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 3924,
+          "avgFare": 4583,
+          "minFare": 3190,
+          "maxFare": 6948,
+          "volatility": 1376,
+          "sampleCount": 16,
+          "changeFromMedian": -17.8
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 3169,
+          "avgFare": 2991,
+          "minFare": 2482,
+          "maxFare": 3323,
+          "volatility": 448,
+          "sampleCount": 3,
+          "changeFromMedian": -33.6
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "IndiGo",
+          "medianFare": 4390,
+          "avgFare": 5068,
+          "minFare": 3196,
+          "count": 20,
+          "priceIndex": 92.0
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 5270,
+          "avgFare": 5902,
+          "minFare": 3158,
+          "count": 19,
+          "priceIndex": 110.4
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 4757,
+          "avgFare": 5566,
+          "minFare": 2482,
+          "count": 23,
+          "priceIndex": 99.7
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 5182,
+          "avgFare": 5495,
+          "minFare": 3283,
+          "count": 15,
+          "priceIndex": 108.6
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 4710,
+          "avgFare": 5338,
+          "minFare": 3169,
+          "count": 40,
+          "priceIndex": 98.7
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Yatra",
+          "medianFare": 4568,
+          "avgFare": 5037,
+          "count": 21,
+          "priceIndex": 95.7
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 5540,
+          "avgFare": 5756,
+          "count": 25,
+          "priceIndex": 116.1
+        },
+        {
+          "ota": "Airline Direct",
+          "medianFare": 4467,
+          "avgFare": 5090,
+          "count": 27,
+          "priceIndex": 93.6
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 3948,
+          "avgFare": 5244,
+          "count": 22,
+          "priceIndex": 82.7
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6048,
+          "avgFare": 6135,
+          "count": 22,
+          "priceIndex": 126.7
+        }
+      ],
+      "anomaliesCount": 30
+    },
+    "DEL-BOM": {
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "observationsCount": 113,
+      "historicalMedian": 6317,
+      "historicalMean": 7709.3,
+      "volatility": 3310.3,
+      "iqr": 3930,
+      "q1": 5433,
+      "q3": 9363,
+      "minFare": 2485,
+      "maxFare": 16873,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8133,
+          "avgFare": 9936,
+          "minFare": 6792,
+          "maxFare": 15930,
+          "volatility": 3502,
+          "sampleCount": 16,
+          "changeFromMedian": 28.7
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 6958,
+          "avgFare": 8560,
+          "minFare": 5979,
+          "maxFare": 14743,
+          "volatility": 2990,
+          "sampleCount": 25,
+          "changeFromMedian": 10.1
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5958,
+          "avgFare": 7657,
+          "minFare": 3861,
+          "maxFare": 16357,
+          "volatility": 3176,
+          "sampleCount": 31,
+          "changeFromMedian": -5.7
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5582,
+          "avgFare": 6973,
+          "minFare": 4728,
+          "maxFare": 16873,
+          "volatility": 3425,
+          "sampleCount": 23,
+          "changeFromMedian": -11.6
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 4529,
+          "avgFare": 5508,
+          "minFare": 2485,
+          "maxFare": 10734,
+          "volatility": 2404,
+          "sampleCount": 12,
+          "changeFromMedian": -28.3
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 5500,
+          "avgFare": 5724,
+          "minFare": 3852,
+          "maxFare": 8687,
+          "volatility": 1593,
+          "sampleCount": 6,
+          "changeFromMedian": -12.9
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Air India",
+          "medianFare": 6958,
+          "avgFare": 8424,
+          "minFare": 4604,
+          "count": 23,
+          "priceIndex": 110.1
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 6293,
+          "avgFare": 7425,
+          "minFare": 4375,
+          "count": 25,
+          "priceIndex": 99.6
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6148,
+          "avgFare": 7302,
+          "minFare": 2485,
+          "count": 22,
+          "priceIndex": 97.3
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 5808,
+          "avgFare": 7961,
+          "minFare": 3861,
+          "count": 20,
+          "priceIndex": 92.0
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 6493,
+          "avgFare": 7475,
+          "minFare": 4159,
+          "count": 23,
+          "priceIndex": 102.8
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 7059,
+          "avgFare": 8285,
+          "count": 26,
+          "priceIndex": 111.7
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6383,
+          "avgFare": 8316,
+          "count": 29,
+          "priceIndex": 101.0
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 6293,
+          "avgFare": 7076,
+          "count": 23,
+          "priceIndex": 99.6
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 5979,
+          "avgFare": 7465,
+          "count": 19,
+          "priceIndex": 94.6
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 6209,
+          "avgFare": 6873,
+          "count": 16,
+          "priceIndex": 98.3
+        }
+      ],
+      "anomaliesCount": 34
+    },
+    "DEL-BLR": {
+      "route": "DEL-BLR",
+      "origin": "DEL",
+      "destination": "BLR",
+      "observationsCount": 122,
+      "historicalMedian": 6854,
+      "historicalMean": 8082.0,
+      "volatility": 3215.2,
+      "iqr": 3960,
+      "q1": 5769,
+      "q3": 9729,
+      "minFare": 2837,
+      "maxFare": 18466,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 9397,
+          "avgFare": 11330,
+          "minFare": 7431,
+          "maxFare": 18466,
+          "volatility": 4002,
+          "sampleCount": 14,
+          "changeFromMedian": 37.1
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 7480,
+          "avgFare": 8724,
+          "minFare": 6203,
+          "maxFare": 16547,
+          "volatility": 3122,
+          "sampleCount": 25,
+          "changeFromMedian": 9.1
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 6431,
+          "avgFare": 8210,
+          "minFare": 5134,
+          "maxFare": 14787,
+          "volatility": 3072,
+          "sampleCount": 36,
+          "changeFromMedian": -6.2
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5675,
+          "avgFare": 6869,
+          "minFare": 4879,
+          "maxFare": 12845,
+          "volatility": 2327,
+          "sampleCount": 31,
+          "changeFromMedian": -17.2
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 6156,
+          "avgFare": 6154,
+          "minFare": 2837,
+          "maxFare": 10379,
+          "volatility": 2103,
+          "sampleCount": 8,
+          "changeFromMedian": -10.2
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 5248,
+          "avgFare": 6445,
+          "minFare": 4672,
+          "maxFare": 9078,
+          "volatility": 2057,
+          "sampleCount": 8,
+          "changeFromMedian": -23.4
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6644,
+          "avgFare": 7018,
+          "minFare": 4672,
+          "count": 24,
+          "priceIndex": 96.9
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 6950,
+          "avgFare": 8294,
+          "minFare": 2837,
+          "count": 18,
+          "priceIndex": 101.4
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 7704,
+          "avgFare": 9652,
+          "minFare": 5636,
+          "count": 25,
+          "priceIndex": 112.4
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 7157,
+          "avgFare": 8424,
+          "minFare": 4888,
+          "count": 27,
+          "priceIndex": 104.4
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 6246,
+          "avgFare": 7126,
+          "minFare": 4970,
+          "count": 28,
+          "priceIndex": 91.1
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 6798,
+          "avgFare": 8343,
+          "count": 24,
+          "priceIndex": 99.2
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 7226,
+          "avgFare": 8664,
+          "count": 21,
+          "priceIndex": 105.4
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 7848,
+          "avgFare": 8998,
+          "count": 24,
+          "priceIndex": 114.5
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6295,
+          "avgFare": 7210,
+          "count": 26,
+          "priceIndex": 91.8
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 6390,
+          "avgFare": 7423,
+          "count": 27,
+          "priceIndex": 93.2
+        }
+      ],
+      "anomaliesCount": 31
+    },
+    "BOM-DEL": {
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "observationsCount": 115,
+      "historicalMedian": 6478,
+      "historicalMean": 7590.8,
+      "volatility": 3176.6,
+      "iqr": 3437,
+      "q1": 5389,
+      "q3": 8826,
+      "minFare": 3561,
+      "maxFare": 18162,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8110,
+          "avgFare": 10785,
+          "minFare": 6865,
+          "maxFare": 18162,
+          "volatility": 4239,
+          "sampleCount": 16,
+          "changeFromMedian": 25.2
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 6537,
+          "avgFare": 7794,
+          "minFare": 6026,
+          "maxFare": 14291,
+          "volatility": 2333,
+          "sampleCount": 29,
+          "changeFromMedian": 0.9
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5724,
+          "avgFare": 6624,
+          "minFare": 3561,
+          "maxFare": 13291,
+          "volatility": 2411,
+          "sampleCount": 38,
+          "changeFromMedian": -11.6
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5459,
+          "avgFare": 6926,
+          "minFare": 4147,
+          "maxFare": 11645,
+          "volatility": 2534,
+          "sampleCount": 20,
+          "changeFromMedian": -15.7
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 5300,
+          "avgFare": 7525,
+          "minFare": 4456,
+          "maxFare": 18112,
+          "volatility": 4928,
+          "sampleCount": 7,
+          "changeFromMedian": -18.2
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 4557,
+          "avgFare": 6294,
+          "minFare": 4312,
+          "maxFare": 9959,
+          "volatility": 2664,
+          "sampleCount": 5,
+          "changeFromMedian": -29.7
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Akasa Air",
+          "medianFare": 5536,
+          "avgFare": 7059,
+          "minFare": 4312,
+          "count": 21,
+          "priceIndex": 85.5
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 7301,
+          "avgFare": 7851,
+          "minFare": 4400,
+          "count": 15,
+          "priceIndex": 112.7
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6192,
+          "avgFare": 6861,
+          "minFare": 4147,
+          "count": 23,
+          "priceIndex": 95.6
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 7874,
+          "avgFare": 8801,
+          "minFare": 3561,
+          "count": 32,
+          "priceIndex": 121.6
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 6156,
+          "avgFare": 6980,
+          "minFare": 3561,
+          "count": 24,
+          "priceIndex": 95.0
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 5180,
+          "avgFare": 6227,
+          "count": 22,
+          "priceIndex": 80.0
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 6917,
+          "avgFare": 9105,
+          "count": 22,
+          "priceIndex": 106.8
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 6685,
+          "avgFare": 8332,
+          "count": 28,
+          "priceIndex": 103.2
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6342,
+          "avgFare": 6438,
+          "count": 20,
+          "priceIndex": 97.9
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 7266,
+          "avgFare": 7546,
+          "count": 23,
+          "priceIndex": 112.2
+        }
+      ],
+      "anomaliesCount": 32
+    },
+    "DEL-GOI": {
+      "route": "DEL-GOI",
+      "origin": "DEL",
+      "destination": "GOI",
+      "observationsCount": 94,
+      "historicalMedian": 7170,
+      "historicalMean": 7681.8,
+      "volatility": 2506.1,
+      "iqr": 3216,
+      "q1": 5706,
+      "q3": 8922,
+      "minFare": 4116,
+      "maxFare": 15974,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8672,
+          "avgFare": 9581,
+          "minFare": 7249,
+          "maxFare": 15974,
+          "volatility": 2599,
+          "sampleCount": 16,
+          "changeFromMedian": 20.9
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 7322,
+          "avgFare": 7995,
+          "minFare": 6100,
+          "maxFare": 14699,
+          "volatility": 2300,
+          "sampleCount": 24,
+          "changeFromMedian": 2.1
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 6543,
+          "avgFare": 7731,
+          "minFare": 5348,
+          "maxFare": 12777,
+          "volatility": 2491,
+          "sampleCount": 21,
+          "changeFromMedian": -8.7
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5488,
+          "avgFare": 6923,
+          "minFare": 4833,
+          "maxFare": 10960,
+          "volatility": 2226,
+          "sampleCount": 17,
+          "changeFromMedian": -23.5
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 5206,
+          "avgFare": 5660,
+          "minFare": 4116,
+          "maxFare": 9469,
+          "volatility": 1466,
+          "sampleCount": 14,
+          "changeFromMedian": -27.4
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 8813,
+          "avgFare": 8813,
+          "minFare": 8704,
+          "maxFare": 8922,
+          "volatility": 154,
+          "sampleCount": 2,
+          "changeFromMedian": 22.9
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Air India",
+          "medianFare": 7156,
+          "avgFare": 7623,
+          "minFare": 4936,
+          "count": 25,
+          "priceIndex": 99.8
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 7418,
+          "avgFare": 8175,
+          "minFare": 4913,
+          "count": 17,
+          "priceIndex": 103.5
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6822,
+          "avgFare": 7433,
+          "minFare": 4116,
+          "count": 18,
+          "priceIndex": 95.1
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 7308,
+          "avgFare": 7425,
+          "minFare": 4757,
+          "count": 22,
+          "priceIndex": 101.9
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 6694,
+          "avgFare": 7950,
+          "minFare": 5597,
+          "count": 12,
+          "priceIndex": 93.4
+        }
+      ],
+      "otas": [
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 7453,
+          "avgFare": 7819,
+          "count": 17,
+          "priceIndex": 103.9
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 7048,
+          "avgFare": 7319,
+          "count": 17,
+          "priceIndex": 98.3
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 7060,
+          "avgFare": 7909,
+          "count": 26,
+          "priceIndex": 98.5
+        },
+        {
+          "ota": "Airline Direct",
+          "medianFare": 8070,
+          "avgFare": 8504,
+          "count": 16,
+          "priceIndex": 112.6
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 6176,
+          "avgFare": 6836,
+          "count": 18,
+          "priceIndex": 86.1
+        }
+      ],
+      "anomaliesCount": 18
+    },
+    "DEL-HYD": {
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "observationsCount": 128,
+      "historicalMedian": 5893,
+      "historicalMean": 6806,
+      "volatility": 2811.8,
+      "iqr": 3052,
+      "q1": 4871,
+      "q3": 7923,
+      "minFare": 3597,
+      "maxFare": 16226,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 7660,
+          "avgFare": 8969,
+          "minFare": 5862,
+          "maxFare": 16201,
+          "volatility": 3437,
+          "sampleCount": 25,
+          "changeFromMedian": 30.0
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 6290,
+          "avgFare": 7464,
+          "minFare": 5527,
+          "maxFare": 14391,
+          "volatility": 2791,
+          "sampleCount": 18,
+          "changeFromMedian": 6.7
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5197,
+          "avgFare": 6139,
+          "minFare": 4215,
+          "maxFare": 10361,
+          "volatility": 1940,
+          "sampleCount": 45,
+          "changeFromMedian": -11.8
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5098,
+          "avgFare": 5850,
+          "minFare": 4003,
+          "maxFare": 9749,
+          "volatility": 1934,
+          "sampleCount": 24,
+          "changeFromMedian": -13.5
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 5076,
+          "avgFare": 6280,
+          "minFare": 3597,
+          "maxFare": 16226,
+          "volatility": 3400,
+          "sampleCount": 14,
+          "changeFromMedian": -13.9
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 4019,
+          "avgFare": 4019,
+          "minFare": 3911,
+          "maxFare": 4127,
+          "volatility": 153,
+          "sampleCount": 2,
+          "changeFromMedian": -31.8
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Air India",
+          "medianFare": 5745,
+          "avgFare": 7023,
+          "minFare": 4305,
+          "count": 27,
+          "priceIndex": 97.5
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 6255,
+          "avgFare": 7146,
+          "minFare": 3911,
+          "count": 25,
+          "priceIndex": 106.1
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 6293,
+          "avgFare": 7606,
+          "minFare": 4956,
+          "count": 29,
+          "priceIndex": 106.8
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 5584,
+          "avgFare": 5968,
+          "minFare": 3850,
+          "count": 25,
+          "priceIndex": 94.8
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 4788,
+          "avgFare": 6051,
+          "minFare": 3597,
+          "count": 22,
+          "priceIndex": 81.2
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 5604,
+          "avgFare": 6681,
+          "count": 26,
+          "priceIndex": 95.1
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 6016,
+          "avgFare": 6905,
+          "count": 19,
+          "priceIndex": 102.1
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 6055,
+          "avgFare": 6672,
+          "count": 35,
+          "priceIndex": 102.7
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 5863,
+          "avgFare": 7335,
+          "count": 25,
+          "priceIndex": 99.5
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 5776,
+          "avgFare": 6493,
+          "count": 23,
+          "priceIndex": 98.0
+        }
+      ],
+      "anomaliesCount": 34
+    },
+    "DEL-CCU": {
+      "route": "DEL-CCU",
+      "origin": "DEL",
+      "destination": "CCU",
+      "observationsCount": 108,
+      "historicalMedian": 6370,
+      "historicalMean": 7354.7,
+      "volatility": 2872.0,
+      "iqr": 3146,
+      "q1": 5348,
+      "q3": 8494,
+      "minFare": 3662,
+      "maxFare": 18825,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 8096,
+          "avgFare": 9344,
+          "minFare": 6454,
+          "maxFare": 18825,
+          "volatility": 3033,
+          "sampleCount": 21,
+          "changeFromMedian": 27.1
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 6733,
+          "avgFare": 8212,
+          "minFare": 3662,
+          "maxFare": 13637,
+          "volatility": 2878,
+          "sampleCount": 31,
+          "changeFromMedian": 5.7
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 5435,
+          "avgFare": 6002,
+          "minFare": 4625,
+          "maxFare": 10880,
+          "volatility": 1727,
+          "sampleCount": 20,
+          "changeFromMedian": -14.7
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 5428,
+          "avgFare": 6163,
+          "minFare": 4239,
+          "maxFare": 11292,
+          "volatility": 2135,
+          "sampleCount": 18,
+          "changeFromMedian": -14.8
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 5640,
+          "avgFare": 6391,
+          "minFare": 4060,
+          "maxFare": 10511,
+          "volatility": 2137,
+          "sampleCount": 12,
+          "changeFromMedian": -11.5
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 4584,
+          "avgFare": 5972,
+          "minFare": 4058,
+          "maxFare": 13863,
+          "volatility": 3874,
+          "sampleCount": 6,
+          "changeFromMedian": -28.0
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "SpiceJet",
+          "medianFare": 6088,
+          "avgFare": 7189,
+          "minFare": 4098,
+          "count": 17,
+          "priceIndex": 95.6
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 7926,
+          "avgFare": 8363,
+          "minFare": 4060,
+          "count": 23,
+          "priceIndex": 124.4
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 6233,
+          "avgFare": 6775,
+          "minFare": 4119,
+          "count": 29,
+          "priceIndex": 97.8
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 5864,
+          "avgFare": 6356,
+          "minFare": 3662,
+          "count": 24,
+          "priceIndex": 92.1
+        },
+        {
+          "airline": "Vistara",
+          "medianFare": 7315,
+          "avgFare": 8715,
+          "minFare": 5367,
+          "count": 15,
+          "priceIndex": 114.8
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Airline Direct",
+          "medianFare": 6174,
+          "avgFare": 6508,
+          "count": 22,
+          "priceIndex": 96.9
+        },
+        {
+          "ota": "Cleartrip",
+          "medianFare": 7751,
+          "avgFare": 8331,
+          "count": 29,
+          "priceIndex": 121.7
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 7310,
+          "avgFare": 7570,
+          "count": 15,
+          "priceIndex": 114.8
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 6232,
+          "avgFare": 7289,
+          "count": 26,
+          "priceIndex": 97.8
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 6525,
+          "avgFare": 6655,
+          "count": 16,
+          "priceIndex": 102.4
+        }
+      ],
+      "anomaliesCount": 29
+    },
+    "BLR-BOM": {
+      "route": "BLR-BOM",
+      "origin": "BLR",
+      "destination": "BOM",
+      "observationsCount": 100,
+      "historicalMedian": 4650,
+      "historicalMean": 5298.3,
+      "volatility": 2407.0,
+      "iqr": 2940,
+      "q1": 3567,
+      "q3": 6507,
+      "minFare": 2019,
+      "maxFare": 17372,
+      "priceIndex": 100.0,
+      "bookingWindowCurve": [
+        {
+          "window": "Last Minute (0\u20133 days)",
+          "windowKey": "0-3",
+          "medianFare": 5746,
+          "avgFare": 6728,
+          "minFare": 4917,
+          "maxFare": 12138,
+          "volatility": 2246,
+          "sampleCount": 23,
+          "changeFromMedian": 23.6
+        },
+        {
+          "window": "Short Notice (4\u20137 days)",
+          "windowKey": "4-7",
+          "medianFare": 4882,
+          "avgFare": 6654,
+          "minFare": 3458,
+          "maxFare": 17372,
+          "volatility": 3863,
+          "sampleCount": 14,
+          "changeFromMedian": 5.0
+        },
+        {
+          "window": "Standard (8\u201314 days)",
+          "windowKey": "8-14",
+          "medianFare": 4524,
+          "avgFare": 5225,
+          "minFare": 3467,
+          "maxFare": 8681,
+          "volatility": 1555,
+          "sampleCount": 22,
+          "changeFromMedian": -2.7
+        },
+        {
+          "window": "Advance (15\u201330 days)",
+          "windowKey": "15-30",
+          "medianFare": 3503,
+          "avgFare": 4141,
+          "minFare": 2019,
+          "maxFare": 8233,
+          "volatility": 1573,
+          "sampleCount": 23,
+          "changeFromMedian": -24.7
+        },
+        {
+          "window": "Early Bird (31\u201360 days)",
+          "windowKey": "31-60",
+          "medianFare": 3438,
+          "avgFare": 3735,
+          "minFare": 3020,
+          "maxFare": 7335,
+          "volatility": 1167,
+          "sampleCount": 12,
+          "changeFromMedian": -26.1
+        },
+        {
+          "window": "Far Advance (60+ days)",
+          "windowKey": "60+",
+          "medianFare": 3674,
+          "avgFare": 4488,
+          "minFare": 3173,
+          "maxFare": 6563,
+          "volatility": 1521,
+          "sampleCount": 6,
+          "changeFromMedian": -21.0
+        }
+      ],
+      "airlines": [
+        {
+          "airline": "Vistara",
+          "medianFare": 5311,
+          "avgFare": 6297,
+          "minFare": 3458,
+          "count": 27,
+          "priceIndex": 114.2
+        },
+        {
+          "airline": "SpiceJet",
+          "medianFare": 4838,
+          "avgFare": 4667,
+          "minFare": 2019,
+          "count": 25,
+          "priceIndex": 104.0
+        },
+        {
+          "airline": "IndiGo",
+          "medianFare": 4165,
+          "avgFare": 4418,
+          "minFare": 3153,
+          "count": 12,
+          "priceIndex": 89.6
+        },
+        {
+          "airline": "Air India",
+          "medianFare": 4406,
+          "avgFare": 5667,
+          "minFare": 3503,
+          "count": 12,
+          "priceIndex": 94.8
+        },
+        {
+          "airline": "Akasa Air",
+          "medianFare": 4230,
+          "avgFare": 5089,
+          "minFare": 3020,
+          "count": 24,
+          "priceIndex": 91.0
+        }
+      ],
+      "otas": [
+        {
+          "ota": "Cleartrip",
+          "medianFare": 4307,
+          "avgFare": 4819,
+          "count": 25,
+          "priceIndex": 92.6
+        },
+        {
+          "ota": "EaseMyTrip",
+          "medianFare": 4599,
+          "avgFare": 5045,
+          "count": 18,
+          "priceIndex": 98.9
+        },
+        {
+          "ota": "Airline Direct",
+          "medianFare": 4789,
+          "avgFare": 5209,
+          "count": 24,
+          "priceIndex": 103.0
+        },
+        {
+          "ota": "MakeMyTrip",
+          "medianFare": 4777,
+          "avgFare": 5740,
+          "count": 13,
+          "priceIndex": 102.7
+        },
+        {
+          "ota": "Yatra",
+          "medianFare": 4714,
+          "avgFare": 5945,
+          "count": 20,
+          "priceIndex": 101.4
+        }
+      ],
+      "anomaliesCount": 27
+    }
+  },
+  "bookingWindows": [
+    {
+      "windowKey": "0-3",
+      "windowLabel": "Last Minute (0\u20133 days)",
+      "sampleCount": 260,
+      "medianFare": 8022,
+      "avgFare": 9128,
+      "volatility": 3425,
+      "minFare": 3529,
+      "maxFare": 18825,
+      "fareChangePct": 27.6,
+      "priceIndex": 127.6
+    },
+    {
+      "windowKey": "4-7",
+      "windowLabel": "Short Notice (4\u20137 days)",
+      "sampleCount": 293,
+      "medianFare": 6990,
+      "avgFare": 8028,
+      "volatility": 2999,
+      "minFare": 3158,
+      "maxFare": 19866,
+      "fareChangePct": 11.1,
+      "priceIndex": 111.1
+    },
+    {
+      "windowKey": "8-14",
+      "windowLabel": "Standard (8\u201314 days)",
+      "sampleCount": 365,
+      "medianFare": 5728,
+      "avgFare": 6637,
+      "volatility": 2633,
+      "minFare": 2638,
+      "maxFare": 19652,
+      "fareChangePct": -8.9,
+      "priceIndex": 91.1
+    },
+    {
+      "windowKey": "15-30",
+      "windowLabel": "Advance (15\u201330 days)",
+      "sampleCount": 249,
+      "medianFare": 5210,
+      "avgFare": 6083,
+      "volatility": 2476,
+      "minFare": 2019,
+      "maxFare": 16873,
+      "fareChangePct": -17.2,
+      "priceIndex": 82.8
+    },
+    {
+      "windowKey": "31-60",
+      "windowLabel": "Early Bird (31\u201360 days)",
+      "sampleCount": 126,
+      "medianFare": 4859,
+      "avgFare": 5574,
+      "volatility": 2433,
+      "minFare": 2485,
+      "maxFare": 18112,
+      "fareChangePct": -22.7,
+      "priceIndex": 77.3
+    },
+    {
+      "windowKey": "60+",
+      "windowLabel": "Far Advance (60+ days)",
+      "sampleCount": 57,
+      "medianFare": 4783,
+      "avgFare": 5792,
+      "volatility": 2441,
+      "minFare": 2482,
+      "maxFare": 13863,
+      "fareChangePct": -23.9,
+      "priceIndex": 76.1
+    }
+  ],
+  "airlineIntelligence": [
+    {
+      "airline": "IndiGo",
+      "airlineCode": "6E",
+      "totalSamples": 265,
+      "marketSharePct": 19.6,
+      "medianFare": 6293,
+      "avgFare": 7103,
+      "volatility": 2959,
+      "minFare": 2638,
+      "maxFare": 15930,
+      "avgBaseFare": 5871,
+      "avgTaxes": 956,
+      "avgFees": 276,
+      "basePct": 82.7,
+      "taxPct": 13.5,
+      "feePct": 3.9,
+      "overallPriceIndex": 100.1
+    },
+    {
+      "airline": "SpiceJet",
+      "airlineCode": "SG",
+      "totalSamples": 284,
+      "marketSharePct": 21.0,
+      "medianFare": 5824,
+      "avgFare": 6510,
+      "volatility": 2629,
+      "minFare": 2019,
+      "maxFare": 16357,
+      "avgBaseFare": 5390,
+      "avgTaxes": 877,
+      "avgFees": 243,
+      "basePct": 82.8,
+      "taxPct": 13.5,
+      "feePct": 3.7,
+      "overallPriceIndex": 92.6
+    },
+    {
+      "airline": "Akasa Air",
+      "airlineCode": "QP",
+      "totalSamples": 249,
+      "marketSharePct": 18.4,
+      "medianFare": 5968,
+      "avgFare": 6772,
+      "volatility": 2800,
+      "minFare": 2590,
+      "maxFare": 16361,
+      "avgBaseFare": 5618,
+      "avgTaxes": 915,
+      "avgFees": 239,
+      "basePct": 83.0,
+      "taxPct": 13.5,
+      "feePct": 3.5,
+      "overallPriceIndex": 94.9
+    },
+    {
+      "airline": "Air India",
+      "airlineCode": "AI",
+      "totalSamples": 279,
+      "marketSharePct": 20.7,
+      "medianFare": 6390,
+      "avgFare": 7459,
+      "volatility": 3217,
+      "minFare": 2911,
+      "maxFare": 19652,
+      "avgBaseFare": 6196,
+      "avgTaxes": 1009,
+      "avgFees": 254,
+      "basePct": 83.1,
+      "taxPct": 13.5,
+      "feePct": 3.4,
+      "overallPriceIndex": 101.6
+    },
+    {
+      "airline": "Vistara",
+      "airlineCode": "UK",
+      "totalSamples": 273,
+      "marketSharePct": 20.2,
+      "medianFare": 6815,
+      "avgFare": 8047,
+      "volatility": 3502,
+      "minFare": 2482,
+      "maxFare": 19866,
+      "avgBaseFare": 6696,
+      "avgTaxes": 1090,
+      "avgFees": 261,
+      "basePct": 83.2,
+      "taxPct": 13.5,
+      "feePct": 3.2,
+      "overallPriceIndex": 108.4
+    }
+  ],
+  "otaIntelligence": [
+    {
+      "ota": "Airline Direct",
+      "totalObservations": 288,
+      "medianFare": 6004,
+      "avgFare": 6948,
+      "avgConvenienceFee": 0,
+      "avgBaseFare": 5975,
+      "avgTaxes": 973,
+      "differenceVsDirect": 0,
+      "differencePctVsDirect": 0.0,
+      "priceIndex": 95.5
+    },
+    {
+      "ota": "Yatra",
+      "totalObservations": 261,
+      "medianFare": 6370,
+      "avgFare": 7334,
+      "avgConvenienceFee": 495,
+      "avgBaseFare": 5881,
+      "avgTaxes": 957,
+      "differenceVsDirect": 366,
+      "differencePctVsDirect": 6.1,
+      "priceIndex": 101.3
+    },
+    {
+      "ota": "EaseMyTrip",
+      "totalObservations": 266,
+      "medianFare": 6204,
+      "avgFare": 6855,
+      "avgConvenienceFee": 0,
+      "avgBaseFare": 5895,
+      "avgTaxes": 960,
+      "differenceVsDirect": 200,
+      "differencePctVsDirect": 3.3,
+      "priceIndex": 98.6
+    },
+    {
+      "ota": "MakeMyTrip",
+      "totalObservations": 255,
+      "medianFare": 6323,
+      "avgFare": 7179,
+      "avgConvenienceFee": 427,
+      "avgBaseFare": 5807,
+      "avgTaxes": 945,
+      "differenceVsDirect": 319,
+      "differencePctVsDirect": 5.3,
+      "priceIndex": 100.5
+    },
+    {
+      "ota": "Cleartrip",
+      "totalObservations": 280,
+      "medianFare": 6674,
+      "avgFare": 7593,
+      "avgConvenienceFee": 378,
+      "avgBaseFare": 6205,
+      "avgTaxes": 1010,
+      "differenceVsDirect": 670,
+      "differencePctVsDirect": 11.2,
+      "priceIndex": 106.1
+    }
+  ],
+  "abnormalMovements": [
+    {
+      "id": "ANOM_0001",
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 847",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-10-25",
+      "bookingWindowDays": 5,
+      "currentFare": 11296,
+      "previousMedianFare": 5836,
+      "percentChange": 93.6,
+      "zScore": 1.73,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b911,296 is +93.6% above route historical median (\u20b95,836) with a statistical Z-Score of 1.73. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-20 00:00:00"
+    },
+    {
+      "id": "ANOM_0002",
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "airline": "SpiceJet",
+      "flightNumber": "SG 146",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-12-19",
+      "bookingWindowDays": 73,
+      "currentFare": 3680,
+      "previousMedianFare": 6399,
+      "percentChange": -42.5,
+      "zScore": -1.12,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b93,680 is -42.5% below route median (\u20b96,399). Statistical drop anomaly with Z-score -1.12 (potential promotional inventory release).",
+      "detectedAt": "2026-10-07 00:00:00"
+    },
+    {
+      "id": "ANOM_0003",
+      "route": "MAA-DEL",
+      "origin": "MAA",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 786",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2027-01-08",
+      "bookingWindowDays": 88,
+      "currentFare": 4391,
+      "previousMedianFare": 6534,
+      "percentChange": -32.8,
+      "zScore": -1.03,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b94,391 is -32.8% below route median (\u20b96,534). Statistical drop anomaly with Z-score -1.03 (potential promotional inventory release).",
+      "detectedAt": "2026-10-12 00:00:00"
+    },
+    {
+      "id": "ANOM_0004",
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 316",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2027-01-14",
+      "bookingWindowDays": 78,
+      "currentFare": 4312,
+      "previousMedianFare": 6478,
+      "percentChange": -33.4,
+      "zScore": -1.03,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b94,312 is -33.4% below route median (\u20b96,478). Statistical drop anomaly with Z-score -1.03 (potential promotional inventory release).",
+      "detectedAt": "2026-10-28 00:00:00"
+    },
+    {
+      "id": "ANOM_0005",
+      "route": "DEL-GOI",
+      "origin": "DEL",
+      "destination": "GOI",
+      "airline": "Air India",
+      "flightNumber": "AI 335",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-10-24",
+      "bookingWindowDays": 13,
+      "currentFare": 11487,
+      "previousMedianFare": 7170,
+      "percentChange": 60.2,
+      "zScore": 1.52,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b911,487 is +60.2% above route historical median (\u20b97,170) with a statistical Z-Score of 1.52. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-11 00:00:00"
+    },
+    {
+      "id": "ANOM_0006",
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "airline": "Air India",
+      "flightNumber": "AI 235",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-22",
+      "bookingWindowDays": 0,
+      "currentFare": 12952,
+      "previousMedianFare": 5893,
+      "percentChange": 119.8,
+      "zScore": 2.19,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b912,952 is +119.8% above route historical median (\u20b95,893) with a statistical Z-Score of 2.19. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-22 00:00:00"
+    },
+    {
+      "id": "ANOM_0007",
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 160",
+      "sourceOta": "Yatra",
+      "travelDate": "2026-10-07",
+      "bookingWindowDays": 0,
+      "currentFare": 16361,
+      "previousMedianFare": 6478,
+      "percentChange": 152.6,
+      "zScore": 2.76,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b916,361 is +152.6% above route historical median (\u20b96,478) with a statistical Z-Score of 2.76. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-07 00:00:00"
+    },
+    {
+      "id": "ANOM_0008",
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 158",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-10-21",
+      "bookingWindowDays": 4,
+      "currentFare": 13379,
+      "previousMedianFare": 6399,
+      "percentChange": 109.1,
+      "zScore": 1.69,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b913,379 is +109.1% above route historical median (\u20b96,399) with a statistical Z-Score of 1.69. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-17 00:00:00"
+    },
+    {
+      "id": "ANOM_0009",
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "airline": "Air India",
+      "flightNumber": "AI 999",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-11-03",
+      "bookingWindowDays": 24,
+      "currentFare": 7644,
+      "previousMedianFare": 4772,
+      "percentChange": 60.2,
+      "zScore": 0.93,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b97,644 is +60.2% above route historical median (\u20b94,772) with a statistical Z-Score of 0.93. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-10 00:00:00"
+    },
+    {
+      "id": "ANOM_0010",
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "airline": "Vistara",
+      "flightNumber": "UK 822",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-09",
+      "bookingWindowDays": 3,
+      "currentFare": 17793,
+      "previousMedianFare": 6399,
+      "percentChange": 178.1,
+      "zScore": 2.97,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b917,793 is +178.1% above route historical median (\u20b96,399) with a statistical Z-Score of 2.97. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-06 00:00:00"
+    },
+    {
+      "id": "ANOM_0011",
+      "route": "DEL-CCU",
+      "origin": "DEL",
+      "destination": "CCU",
+      "airline": "SpiceJet",
+      "flightNumber": "SG 915",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-11",
+      "bookingWindowDays": 1,
+      "currentFare": 13466,
+      "previousMedianFare": 6370,
+      "percentChange": 111.4,
+      "zScore": 2.13,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b913,466 is +111.4% above route historical median (\u20b96,370) with a statistical Z-Score of 2.13. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-10 00:00:00"
+    },
+    {
+      "id": "ANOM_0012",
+      "route": "DEL-CCU",
+      "origin": "DEL",
+      "destination": "CCU",
+      "airline": "IndiGo",
+      "flightNumber": "6E 171",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-10-20",
+      "bookingWindowDays": 7,
+      "currentFare": 12141,
+      "previousMedianFare": 6370,
+      "percentChange": 90.6,
+      "zScore": 1.67,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b912,141 is +90.6% above route historical median (\u20b96,370) with a statistical Z-Score of 1.67. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-13 00:00:00"
+    },
+    {
+      "id": "ANOM_0013",
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "airline": "IndiGo",
+      "flightNumber": "6E 477",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-10-19",
+      "bookingWindowDays": 4,
+      "currentFare": 13187,
+      "previousMedianFare": 6317,
+      "percentChange": 108.8,
+      "zScore": 1.65,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b913,187 is +108.8% above route historical median (\u20b96,317) with a statistical Z-Score of 1.65. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-15 00:00:00"
+    },
+    {
+      "id": "ANOM_0014",
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "airline": "Vistara",
+      "flightNumber": "UK 948",
+      "sourceOta": "Yatra",
+      "travelDate": "2026-10-22",
+      "bookingWindowDays": 10,
+      "currentFare": 3861,
+      "previousMedianFare": 6317,
+      "percentChange": -38.9,
+      "zScore": -1.16,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b93,861 is -38.9% below route median (\u20b96,317). Statistical drop anomaly with Z-score -1.16 (potential promotional inventory release).",
+      "detectedAt": "2026-10-12 00:00:00"
+    },
+    {
+      "id": "ANOM_0015",
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "airline": "IndiGo",
+      "flightNumber": "6E 317",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-11-18",
+      "bookingWindowDays": 38,
+      "currentFare": 4874,
+      "previousMedianFare": 7782,
+      "percentChange": -37.4,
+      "zScore": -1.13,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b94,874 is -37.4% below route median (\u20b97,782). Statistical drop anomaly with Z-score -1.13 (potential promotional inventory release).",
+      "detectedAt": "2026-10-11 00:00:00"
+    },
+    {
+      "id": "ANOM_0016",
+      "route": "BLR-BOM",
+      "origin": "BLR",
+      "destination": "BOM",
+      "airline": "Vistara",
+      "flightNumber": "UK 587",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-10-24",
+      "bookingWindowDays": 6,
+      "currentFare": 10340,
+      "previousMedianFare": 4650,
+      "percentChange": 122.4,
+      "zScore": 2.09,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b910,340 is +122.4% above route historical median (\u20b94,650) with a statistical Z-Score of 2.09. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-18 00:00:00"
+    },
+    {
+      "id": "ANOM_0017",
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "airline": "SpiceJet",
+      "flightNumber": "SG 296",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-10-25",
+      "bookingWindowDays": 7,
+      "currentFare": 9707,
+      "previousMedianFare": 5836,
+      "percentChange": 66.3,
+      "zScore": 1.14,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b99,707 is +66.3% above route historical median (\u20b95,836) with a statistical Z-Score of 1.14. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-18 00:00:00"
+    },
+    {
+      "id": "ANOM_0018",
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 380",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-11-16",
+      "bookingWindowDays": 24,
+      "currentFare": 5231,
+      "previousMedianFare": 7782,
+      "percentChange": -32.8,
+      "zScore": -1.01,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b95,231 is -32.8% below route median (\u20b97,782). Statistical drop anomaly with Z-score -1.01 (potential promotional inventory release).",
+      "detectedAt": "2026-10-23 00:00:00"
+    },
+    {
+      "id": "ANOM_0019",
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "airline": "IndiGo",
+      "flightNumber": "6E 152",
+      "sourceOta": "Yatra",
+      "travelDate": "2026-10-21",
+      "bookingWindowDays": 5,
+      "currentFare": 13067,
+      "previousMedianFare": 6317,
+      "percentChange": 106.9,
+      "zScore": 1.62,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b913,067 is +106.9% above route historical median (\u20b96,317) with a statistical Z-Score of 1.62. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-16 00:00:00"
+    },
+    {
+      "id": "ANOM_0020",
+      "route": "MAA-DEL",
+      "origin": "MAA",
+      "destination": "DEL",
+      "airline": "SpiceJet",
+      "flightNumber": "SG 944",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-11-07",
+      "bookingWindowDays": 12,
+      "currentFare": 9686,
+      "previousMedianFare": 6534,
+      "percentChange": 48.2,
+      "zScore": 0.68,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b99,686 is +48.2% above route historical median (\u20b96,534) with a statistical Z-Score of 0.68. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-26 00:00:00"
+    },
+    {
+      "id": "ANOM_0021",
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "airline": "Vistara",
+      "flightNumber": "UK 852",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-10-04",
+      "bookingWindowDays": 2,
+      "currentFare": 8481,
+      "previousMedianFare": 5893,
+      "percentChange": 43.9,
+      "zScore": 0.6,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b98,481 is +43.9% above route historical median (\u20b95,893) with a statistical Z-Score of 0.6. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-02 00:00:00"
+    },
+    {
+      "id": "ANOM_0022",
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "airline": "Vistara",
+      "flightNumber": "UK 874",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-12-29",
+      "bookingWindowDays": 73,
+      "currentFare": 2482,
+      "previousMedianFare": 4772,
+      "percentChange": -48.0,
+      "zScore": -1.26,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b92,482 is -48.0% below route median (\u20b94,772). Statistical drop anomaly with Z-score -1.26 (potential promotional inventory release).",
+      "detectedAt": "2026-10-17 00:00:00"
+    },
+    {
+      "id": "ANOM_0023",
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 262",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-25",
+      "bookingWindowDays": 5,
+      "currentFare": 12239,
+      "previousMedianFare": 6399,
+      "percentChange": 91.3,
+      "zScore": 1.36,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b912,239 is +91.3% above route historical median (\u20b96,399) with a statistical Z-Score of 1.36. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-20 00:00:00"
+    },
+    {
+      "id": "ANOM_0024",
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 136",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-12-13",
+      "bookingWindowDays": 58,
+      "currentFare": 3939,
+      "previousMedianFare": 5893,
+      "percentChange": -33.2,
+      "zScore": -1.02,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b93,939 is -33.2% below route median (\u20b95,893). Statistical drop anomaly with Z-score -1.02 (potential promotional inventory release).",
+      "detectedAt": "2026-10-16 00:00:00"
+    },
+    {
+      "id": "ANOM_0025",
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "airline": "IndiGo",
+      "flightNumber": "6E 810",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-11-07",
+      "bookingWindowDays": 10,
+      "currentFare": 10361,
+      "previousMedianFare": 5893,
+      "percentChange": 75.8,
+      "zScore": 1.26,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b910,361 is +75.8% above route historical median (\u20b95,893) with a statistical Z-Score of 1.26. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-28 00:00:00"
+    },
+    {
+      "id": "ANOM_0026",
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "airline": "IndiGo",
+      "flightNumber": "6E 885",
+      "sourceOta": "Yatra",
+      "travelDate": "2026-11-02",
+      "bookingWindowDays": 24,
+      "currentFare": 8828,
+      "previousMedianFare": 5836,
+      "percentChange": 51.3,
+      "zScore": 0.81,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b98,828 is +51.3% above route historical median (\u20b95,836) with a statistical Z-Score of 0.81. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-09 00:00:00"
+    },
+    {
+      "id": "ANOM_0027",
+      "route": "DEL-GOI",
+      "origin": "DEL",
+      "destination": "GOI",
+      "airline": "IndiGo",
+      "flightNumber": "6E 774",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-11-07",
+      "bookingWindowDays": 14,
+      "currentFare": 10521,
+      "previousMedianFare": 7170,
+      "percentChange": 46.7,
+      "zScore": 1.13,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b910,521 is +46.7% above route historical median (\u20b97,170) with a statistical Z-Score of 1.13. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-24 00:00:00"
+    },
+    {
+      "id": "ANOM_0028",
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "airline": "Vistara",
+      "flightNumber": "UK 131",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-09",
+      "bookingWindowDays": 6,
+      "currentFare": 13719,
+      "previousMedianFare": 5836,
+      "percentChange": 135.1,
+      "zScore": 2.63,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b913,719 is +135.1% above route historical median (\u20b95,836) with a statistical Z-Score of 2.63. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-03 00:00:00"
+    },
+    {
+      "id": "ANOM_0029",
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "airline": "SpiceJet",
+      "flightNumber": "SG 361",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-10-17",
+      "bookingWindowDays": 10,
+      "currentFare": 7079,
+      "previousMedianFare": 4772,
+      "percentChange": 48.3,
+      "zScore": 0.69,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b97,079 is +48.3% above route historical median (\u20b94,772) with a statistical Z-Score of 0.69. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-07 00:00:00"
+    },
+    {
+      "id": "ANOM_0030",
+      "route": "DEL-BLR",
+      "origin": "DEL",
+      "destination": "BLR",
+      "airline": "Air India",
+      "flightNumber": "AI 677",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-22",
+      "bookingWindowDays": 1,
+      "currentFare": 15717,
+      "previousMedianFare": 6854,
+      "percentChange": 129.3,
+      "zScore": 2.37,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b915,717 is +129.3% above route historical median (\u20b96,854) with a statistical Z-Score of 2.37. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-21 00:00:00"
+    },
+    {
+      "id": "ANOM_0031",
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 262",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-11-09",
+      "bookingWindowDays": 25,
+      "currentFare": 9363,
+      "previousMedianFare": 6317,
+      "percentChange": 48.2,
+      "zScore": 0.5,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b99,363 is +48.2% above route historical median (\u20b96,317) with a statistical Z-Score of 0.5. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-15 00:00:00"
+    },
+    {
+      "id": "ANOM_0032",
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 894",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-10-28",
+      "bookingWindowDays": 8,
+      "currentFare": 17852,
+      "previousMedianFare": 6399,
+      "percentChange": 179.0,
+      "zScore": 2.99,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b917,852 is +179.0% above route historical median (\u20b96,399) with a statistical Z-Score of 2.99. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-20 00:00:00"
+    },
+    {
+      "id": "ANOM_0033",
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "airline": "Air India",
+      "flightNumber": "AI 627",
+      "sourceOta": "EaseMyTrip",
+      "travelDate": "2026-10-21",
+      "bookingWindowDays": 1,
+      "currentFare": 10968,
+      "previousMedianFare": 4772,
+      "percentChange": 129.8,
+      "zScore": 2.34,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b910,968 is +129.8% above route historical median (\u20b94,772) with a statistical Z-Score of 2.34. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-20 00:00:00"
+    },
+    {
+      "id": "ANOM_0034",
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 428",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2027-01-23",
+      "bookingWindowDays": 90,
+      "currentFare": 4318,
+      "previousMedianFare": 6478,
+      "percentChange": -33.3,
+      "zScore": -1.03,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b94,318 is -33.3% below route median (\u20b96,478). Statistical drop anomaly with Z-score -1.03 (potential promotional inventory release).",
+      "detectedAt": "2026-10-25 00:00:00"
+    },
+    {
+      "id": "ANOM_0035",
+      "route": "DEL-GOI",
+      "origin": "DEL",
+      "destination": "GOI",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 854",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-12-07",
+      "bookingWindowDays": 45,
+      "currentFare": 4790,
+      "previousMedianFare": 7170,
+      "percentChange": -33.2,
+      "zScore": -1.15,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b94,790 is -33.2% below route median (\u20b97,170). Statistical drop anomaly with Z-score -1.15 (potential promotional inventory release).",
+      "detectedAt": "2026-10-23 00:00:00"
+    },
+    {
+      "id": "ANOM_0036",
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "airline": "Vistara",
+      "flightNumber": "UK 220",
+      "sourceOta": "MakeMyTrip",
+      "travelDate": "2026-10-25",
+      "bookingWindowDays": 0,
+      "currentFare": 6801,
+      "previousMedianFare": 4772,
+      "percentChange": 42.5,
+      "zScore": 0.57,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b96,801 is +42.5% above route historical median (\u20b94,772) with a statistical Z-Score of 0.57. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-25 00:00:00"
+    },
+    {
+      "id": "ANOM_0037",
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 488",
+      "sourceOta": "Yatra",
+      "travelDate": "2026-10-27",
+      "bookingWindowDays": 9,
+      "currentFare": 3561,
+      "previousMedianFare": 6478,
+      "percentChange": -45.0,
+      "zScore": -1.27,
+      "anomalyType": "FLASH_PRICE_DROP",
+      "status": "DROP ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b93,561 is -45.0% below route median (\u20b96,478). Statistical drop anomaly with Z-score -1.27 (potential promotional inventory release).",
+      "detectedAt": "2026-10-18 00:00:00"
+    },
+    {
+      "id": "ANOM_0038",
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 116",
+      "sourceOta": "Cleartrip",
+      "travelDate": "2026-10-26",
+      "bookingWindowDays": 6,
+      "currentFare": 14210,
+      "previousMedianFare": 7782,
+      "percentChange": 82.6,
+      "zScore": 1.8,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b914,210 is +82.6% above route historical median (\u20b97,782) with a statistical Z-Score of 1.8. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-20 00:00:00"
+    },
+    {
+      "id": "ANOM_0039",
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "airline": "Air India",
+      "flightNumber": "AI 872",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-10-15",
+      "bookingWindowDays": 0,
+      "currentFare": 16689,
+      "previousMedianFare": 7782,
+      "percentChange": 114.5,
+      "zScore": 2.58,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "CRITICAL",
+      "reason": "Observed fare of \u20b916,689 is +114.5% above route historical median (\u20b97,782) with a statistical Z-Score of 2.58. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-15 00:00:00"
+    },
+    {
+      "id": "ANOM_0040",
+      "route": "DEL-BLR",
+      "origin": "DEL",
+      "destination": "BLR",
+      "airline": "Akasa Air",
+      "flightNumber": "QP 194",
+      "sourceOta": "Airline Direct",
+      "travelDate": "2026-11-10",
+      "bookingWindowDays": 11,
+      "currentFare": 10923,
+      "previousMedianFare": 6854,
+      "percentChange": 59.4,
+      "zScore": 0.88,
+      "anomalyType": "SURGE_SPIKE",
+      "status": "SURGE ANOMALY",
+      "severity": "HIGH",
+      "reason": "Observed fare of \u20b910,923 is +59.4% above route historical median (\u20b96,854) with a statistical Z-Score of 0.88. Exceeds the 95th percentile threshold.",
+      "detectedAt": "2026-10-30 00:00:00"
+    }
+  ],
+  "roundTripAnalysis": [
+    {
+      "route": "MAA-DEL",
+      "origin": "MAA",
+      "destination": "DEL",
+      "oneWayMedian": 5986,
+      "twoOneWaysCost": 11972,
+      "roundTripMedian": 11543,
+      "rtDifferenceAmount": -429,
+      "rtDifferencePct": -3.6,
+      "savingsCategory": "Saves Money",
+      "owCount": 89,
+      "rtCount": 22
+    },
+    {
+      "route": "BLR-DEL",
+      "origin": "BLR",
+      "destination": "DEL",
+      "oneWayMedian": 6923,
+      "twoOneWaysCost": 13846,
+      "roundTripMedian": 12642,
+      "rtDifferenceAmount": -1204,
+      "rtDifferencePct": -8.7,
+      "savingsCategory": "Saves Money",
+      "owCount": 77,
+      "rtCount": 27
+    },
+    {
+      "route": "PNQ-DEL",
+      "origin": "PNQ",
+      "destination": "DEL",
+      "oneWayMedian": 5207,
+      "twoOneWaysCost": 10414,
+      "roundTripMedian": 10156,
+      "rtDifferenceAmount": -258,
+      "rtDifferencePct": -2.5,
+      "savingsCategory": "Saves Money",
+      "owCount": 90,
+      "rtCount": 28
+    },
+    {
+      "route": "CCU-DEL",
+      "origin": "CCU",
+      "destination": "DEL",
+      "oneWayMedian": 5493,
+      "twoOneWaysCost": 10986,
+      "roundTripMedian": 11962,
+      "rtDifferenceAmount": 976,
+      "rtDifferencePct": 8.9,
+      "savingsCategory": "Higher Cost",
+      "owCount": 90,
+      "rtCount": 30
+    },
+    {
+      "route": "BOM-BLR",
+      "origin": "BOM",
+      "destination": "BLR",
+      "oneWayMedian": 4314,
+      "twoOneWaysCost": 8628,
+      "roundTripMedian": 7139,
+      "rtDifferenceAmount": -1489,
+      "rtDifferencePct": -17.3,
+      "savingsCategory": "Saves Money",
+      "owCount": 91,
+      "rtCount": 26
+    },
+    {
+      "route": "DEL-BOM",
+      "origin": "DEL",
+      "destination": "BOM",
+      "oneWayMedian": 5763,
+      "twoOneWaysCost": 11526,
+      "roundTripMedian": 12054,
+      "rtDifferenceAmount": 528,
+      "rtDifferencePct": 4.6,
+      "savingsCategory": "Higher Cost",
+      "owCount": 81,
+      "rtCount": 32
+    },
+    {
+      "route": "DEL-BLR",
+      "origin": "DEL",
+      "destination": "BLR",
+      "oneWayMedian": 6288,
+      "twoOneWaysCost": 12576,
+      "roundTripMedian": 11898,
+      "rtDifferenceAmount": -678,
+      "rtDifferencePct": -5.4,
+      "savingsCategory": "Saves Money",
+      "owCount": 90,
+      "rtCount": 32
+    },
+    {
+      "route": "BOM-DEL",
+      "origin": "BOM",
+      "destination": "DEL",
+      "oneWayMedian": 6058,
+      "twoOneWaysCost": 12116,
+      "roundTripMedian": 11560,
+      "rtDifferenceAmount": -556,
+      "rtDifferencePct": -4.6,
+      "savingsCategory": "Saves Money",
+      "owCount": 87,
+      "rtCount": 28
+    },
+    {
+      "route": "DEL-GOI",
+      "origin": "DEL",
+      "destination": "GOI",
+      "oneWayMedian": 6606,
+      "twoOneWaysCost": 13212,
+      "roundTripMedian": 10660,
+      "rtDifferenceAmount": -2552,
+      "rtDifferencePct": -19.3,
+      "savingsCategory": "Saves Money",
+      "owCount": 74,
+      "rtCount": 20
+    },
+    {
+      "route": "DEL-HYD",
+      "origin": "DEL",
+      "destination": "HYD",
+      "oneWayMedian": 5227,
+      "twoOneWaysCost": 10454,
+      "roundTripMedian": 9904,
+      "rtDifferenceAmount": -550,
+      "rtDifferencePct": -5.3,
+      "savingsCategory": "Saves Money",
+      "owCount": 97,
+      "rtCount": 31
+    },
+    {
+      "route": "DEL-CCU",
+      "origin": "DEL",
+      "destination": "CCU",
+      "oneWayMedian": 5866,
+      "twoOneWaysCost": 11732,
+      "roundTripMedian": 11086,
+      "rtDifferenceAmount": -646,
+      "rtDifferencePct": -5.5,
+      "savingsCategory": "Saves Money",
+      "owCount": 80,
+      "rtCount": 28
+    },
+    {
+      "route": "BLR-BOM",
+      "origin": "BLR",
+      "destination": "BOM",
+      "oneWayMedian": 4154,
+      "twoOneWaysCost": 8308,
+      "roundTripMedian": 7664,
+      "rtDifferenceAmount": -644,
+      "rtDifferencePct": -7.8,
+      "savingsCategory": "Saves Money",
+      "owCount": 80,
+      "rtCount": 20
+    }
+  ],
+  "travelDateAnalytics": [
+    {
+      "dayOfWeek": "Monday",
+      "medianFare": 6293,
+      "avgFare": 7468,
+      "sampleCount": 201,
+      "isWeekend": false
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "medianFare": 6511,
+      "avgFare": 7236,
+      "sampleCount": 192,
+      "isWeekend": false
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "medianFare": 6108,
+      "avgFare": 6931,
+      "sampleCount": 177,
+      "isWeekend": false
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "medianFare": 6206,
+      "avgFare": 7199,
+      "sampleCount": 200,
+      "isWeekend": false
+    },
+    {
+      "dayOfWeek": "Friday",
+      "medianFare": 6036,
+      "avgFare": 7025,
+      "sampleCount": 194,
+      "isWeekend": true
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "medianFare": 6604,
+      "avgFare": 7474,
+      "sampleCount": 205,
+      "isWeekend": true
+    },
+    {
+      "dayOfWeek": "Sunday",
+      "medianFare": 6217,
+      "avgFare": 6870,
+      "sampleCount": 181,
+      "isWeekend": true
+    }
+  ],
+  "methodology": {
+    "formula": "Price Index = (Observed Fare / Reference Fare) * 100",
+    "referenceDescription": "The route-level median fare derived from normalized airline and OTA historical observations.",
+    "tiers": [
+      {
+        "range": "Index < 90",
+        "category": "Substantial Value",
+        "description": "Fare is >10% lower than route median"
+      },
+      {
+        "range": "90 <= Index <= 110",
+        "category": "Fair Market Level",
+        "description": "Fare is within normal statistical boundary"
+      },
+      {
+        "range": "111 <= Index <= 125",
+        "category": "Above Average",
+        "description": "Fare is slightly elevated"
+      },
+      {
+        "range": "Index > 125",
+        "category": "Surge Pricing",
+        "description": "Fare is significantly elevated (surge/peak)"
+      }
+    ]
+  }
+}

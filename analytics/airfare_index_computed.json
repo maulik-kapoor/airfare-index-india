@@ -1,0 +1,360 @@
+{
+  "routes": {
+    "DEL-BOM": {
+      "route": "DEL-BOM",
+      "total_samples": 7,
+      "historical_median": 6100,
+      "historical_mean": 6557.14,
+      "std_dev": 1775.39,
+      "booking_windows": {
+        "0-3": 8800,
+        "4-7": 6900,
+        "8-14": 5750,
+        "15-30": 4950,
+        "30+": 6100
+      },
+      "records": [
+        {
+          "route": "DEL-BOM",
+          "airline": "IndiGo",
+          "booking_window_days": 21,
+          "fare": 4850,
+          "is_weekend": false,
+          "price_index": 79.5,
+          "z_score": -0.96,
+          "percent_deviation": -20.5,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "IndiGo",
+          "booking_window_days": 18,
+          "fare": 5050,
+          "is_weekend": false,
+          "price_index": 82.8,
+          "z_score": -0.85,
+          "percent_deviation": -17.2,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "Air India",
+          "booking_window_days": 14,
+          "fare": 5400,
+          "is_weekend": false,
+          "price_index": 88.5,
+          "z_score": -0.65,
+          "percent_deviation": -11.5,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "Vistara",
+          "booking_window_days": 10,
+          "fare": 6100,
+          "is_weekend": true,
+          "price_index": 100.0,
+          "z_score": -0.26,
+          "percent_deviation": 0.0,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "IndiGo",
+          "booking_window_days": 5,
+          "fare": 6900,
+          "is_weekend": false,
+          "price_index": 113.1,
+          "z_score": 0.19,
+          "percent_deviation": 13.1,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "Air India",
+          "booking_window_days": 2,
+          "fare": 7800,
+          "is_weekend": true,
+          "price_index": 127.9,
+          "z_score": 0.7,
+          "percent_deviation": 27.9,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BOM",
+          "airline": "Air India Express",
+          "booking_window_days": 1,
+          "fare": 9800,
+          "is_weekend": true,
+          "price_index": 160.7,
+          "z_score": 1.83,
+          "percent_deviation": 60.7,
+          "is_anomaly": true
+        }
+      ]
+    },
+    "DEL-BLR": {
+      "route": "DEL-BLR",
+      "total_samples": 6,
+      "historical_median": 7000.0,
+      "historical_mean": 7941.67,
+      "std_dev": 3372.3,
+      "booking_windows": {
+        "0-3": 11550,
+        "4-7": 7600,
+        "8-14": 6400,
+        "15-30": 5275,
+        "30+": 7000.0
+      },
+      "records": [
+        {
+          "route": "DEL-BLR",
+          "airline": "IndiGo",
+          "booking_window_days": 28,
+          "fare": 5100,
+          "is_weekend": false,
+          "price_index": 72.9,
+          "z_score": -0.84,
+          "percent_deviation": -27.1,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BLR",
+          "airline": "Akasa Air",
+          "booking_window_days": 20,
+          "fare": 5450,
+          "is_weekend": false,
+          "price_index": 77.9,
+          "z_score": -0.74,
+          "percent_deviation": -22.1,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BLR",
+          "airline": "Air India",
+          "booking_window_days": 12,
+          "fare": 6400,
+          "is_weekend": false,
+          "price_index": 91.4,
+          "z_score": -0.46,
+          "percent_deviation": -8.6,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BLR",
+          "airline": "Vistara",
+          "booking_window_days": 6,
+          "fare": 7600,
+          "is_weekend": true,
+          "price_index": 108.6,
+          "z_score": -0.1,
+          "percent_deviation": 8.6,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BLR",
+          "airline": "IndiGo",
+          "booking_window_days": 2,
+          "fare": 8900,
+          "is_weekend": true,
+          "price_index": 127.1,
+          "z_score": 0.28,
+          "percent_deviation": 27.1,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-BLR",
+          "airline": "IndiGo",
+          "booking_window_days": 1,
+          "fare": 14200,
+          "is_weekend": true,
+          "price_index": 202.9,
+          "z_score": 1.86,
+          "percent_deviation": 102.9,
+          "is_anomaly": true
+        }
+      ]
+    },
+    "BOM-BLR": {
+      "route": "BOM-BLR",
+      "total_samples": 5,
+      "historical_median": 4200,
+      "historical_mean": 4480,
+      "std_dev": 1127.83,
+      "booking_windows": {
+        "0-3": 6100,
+        "4-7": 5100,
+        "8-14": 4200,
+        "15-30": 3500,
+        "30+": 4200
+      },
+      "records": [
+        {
+          "route": "BOM-BLR",
+          "airline": "IndiGo",
+          "booking_window_days": 25,
+          "fare": 3300,
+          "is_weekend": false,
+          "price_index": 78.6,
+          "z_score": -1.05,
+          "percent_deviation": -21.4,
+          "is_anomaly": false
+        },
+        {
+          "route": "BOM-BLR",
+          "airline": "Akasa Air",
+          "booking_window_days": 16,
+          "fare": 3700,
+          "is_weekend": false,
+          "price_index": 88.1,
+          "z_score": -0.69,
+          "percent_deviation": -11.9,
+          "is_anomaly": false
+        },
+        {
+          "route": "BOM-BLR",
+          "airline": "Air India",
+          "booking_window_days": 9,
+          "fare": 4200,
+          "is_weekend": false,
+          "price_index": 100.0,
+          "z_score": -0.25,
+          "percent_deviation": 0.0,
+          "is_anomaly": false
+        },
+        {
+          "route": "BOM-BLR",
+          "airline": "Vistara",
+          "booking_window_days": 4,
+          "fare": 5100,
+          "is_weekend": true,
+          "price_index": 121.4,
+          "z_score": 0.55,
+          "percent_deviation": 21.4,
+          "is_anomaly": false
+        },
+        {
+          "route": "BOM-BLR",
+          "airline": "IndiGo",
+          "booking_window_days": 1,
+          "fare": 6100,
+          "is_weekend": true,
+          "price_index": 145.2,
+          "z_score": 1.44,
+          "percent_deviation": 45.2,
+          "is_anomaly": true
+        }
+      ]
+    },
+    "DEL-GOI": {
+      "route": "DEL-GOI",
+      "total_samples": 5,
+      "historical_median": 6200,
+      "historical_mean": 7800,
+      "std_dev": 4430.01,
+      "booking_windows": {
+        "0-3": 15500,
+        "4-7": 7400,
+        "8-14": 6200,
+        "15-30": 4950,
+        "30+": 6200
+      },
+      "records": [
+        {
+          "route": "DEL-GOI",
+          "airline": "IndiGo",
+          "booking_window_days": 30,
+          "fare": 4600,
+          "is_weekend": false,
+          "price_index": 74.2,
+          "z_score": -0.72,
+          "percent_deviation": -25.8,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-GOI",
+          "airline": "Air India",
+          "booking_window_days": 16,
+          "fare": 5300,
+          "is_weekend": false,
+          "price_index": 85.5,
+          "z_score": -0.56,
+          "percent_deviation": -14.5,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-GOI",
+          "airline": "Vistara",
+          "booking_window_days": 10,
+          "fare": 6200,
+          "is_weekend": false,
+          "price_index": 100.0,
+          "z_score": -0.36,
+          "percent_deviation": 0.0,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-GOI",
+          "airline": "IndiGo",
+          "booking_window_days": 5,
+          "fare": 7400,
+          "is_weekend": true,
+          "price_index": 119.4,
+          "z_score": -0.09,
+          "percent_deviation": 19.4,
+          "is_anomaly": false
+        },
+        {
+          "route": "DEL-GOI",
+          "airline": "IndiGo",
+          "booking_window_days": 1,
+          "fare": 15500,
+          "is_weekend": true,
+          "price_index": 250.0,
+          "z_score": 1.74,
+          "percent_deviation": 150.0,
+          "is_anomaly": true
+        }
+      ]
+    }
+  },
+  "detected_anomalies": [
+    {
+      "route": "DEL-BOM",
+      "airline": "Air India Express",
+      "fare": 9800,
+      "reference_median": 6100,
+      "percent_deviation": 60.7,
+      "z_score": 1.83,
+      "booking_window_days": 1
+    },
+    {
+      "route": "DEL-BLR",
+      "airline": "IndiGo",
+      "fare": 14200,
+      "reference_median": 7000.0,
+      "percent_deviation": 102.9,
+      "z_score": 1.86,
+      "booking_window_days": 1
+    },
+    {
+      "route": "BOM-BLR",
+      "airline": "IndiGo",
+      "fare": 6100,
+      "reference_median": 4200,
+      "percent_deviation": 45.2,
+      "z_score": 1.44,
+      "booking_window_days": 1
+    },
+    {
+      "route": "DEL-GOI",
+      "airline": "IndiGo",
+      "fare": 15500,
+      "reference_median": 6200,
+      "percent_deviation": 150.0,
+      "z_score": 1.74,
+      "booking_window_days": 1
+    }
+  ],
+  "total_anomalies": 4
+}
