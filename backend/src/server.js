@@ -68,8 +68,12 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = config.port;
-app.listen(PORT, () => {
-  console.log(`🚀 Airfare Index Backend running on port ${PORT}`);
-  console.log(`✈️  Flight Search API ready at http://localhost:${PORT}/api/flights/search`);
-  console.log(`📊 Analytics API ready at http://localhost:${PORT}/api/analytics/summary`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Airfare Index Backend running on port ${PORT}`);
+    console.log(`✈️  Flight Search API ready at http://localhost:${PORT}/api/flights/search`);
+    console.log(`📊 Analytics API ready at http://localhost:${PORT}/api/analytics/summary`);
+  });
+}
+
+export default app;
