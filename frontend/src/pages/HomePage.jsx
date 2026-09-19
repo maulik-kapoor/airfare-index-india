@@ -22,6 +22,7 @@ import {
 } from 'recharts';
 import SearchBar from '../components/SearchBar.jsx';
 import AirfareHeatmap from '../components/AirfareHeatmap.jsx';
+import TransitSection from '../components/TransitSection.jsx';
 import api from '../services/api.js';
 
 export default function HomePage() {
@@ -128,6 +129,9 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* Dedicated Transit & Visa Requirement Section for Predefined Routes */}
+        <TransitSection id="predefined-transit-section" />
 
         {/* Clean, Simple Single Graph: Best Time to Book */}
         <section className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">

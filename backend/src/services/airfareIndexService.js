@@ -54,6 +54,7 @@ export const ROUTE_BASELINES = {
   'DEL-CCU': { origin: 'DEL', destination: 'CCU', routeName: 'Delhi to Kolkata', historicalMedian: 5600, volatility: 850 },
   'DEL-GOI': { origin: 'DEL', destination: 'GOI', routeName: 'Delhi to Goa', historicalMedian: 6200, volatility: 1180 },
   'DEL-HYD': { origin: 'DEL', destination: 'HYD', routeName: 'Delhi to Hyderabad', historicalMedian: 5200, volatility: 780 },
+  'DEL-YYZ': { origin: 'DEL', destination: 'YYZ', routeName: 'Delhi to Toronto', historicalMedian: 68500, volatility: 4200 },
 };
 
 export function getRouteBaseline(origin, destination) {

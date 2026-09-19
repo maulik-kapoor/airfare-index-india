@@ -22,6 +22,8 @@ import ReviewBookingPage from './pages/ReviewBookingPage.jsx';
 import PaymentPage from './pages/PaymentPage.jsx';
 import ConfirmationPage from './pages/ConfirmationPage.jsx';
 import MyBookingsPage from './pages/MyBookingsPage.jsx';
+import TransitAdvisoryPage from './pages/TransitAdvisoryPage.jsx';
+import InternationalVerificationPage from './pages/InternationalVerificationPage.jsx';
 
 export default function App() {
   return (
@@ -52,6 +54,8 @@ export default function App() {
                 <Route path="/payment" element={<PaymentPage />} />
                 <Route path="/confirmation" element={<ConfirmationPage />} />
                 <Route path="/my-bookings" element={<MyBookingsPage />} />
+                <Route path="/transit-advisory" element={<TransitAdvisoryPage />} />
+                <Route path="/international-verification" element={<InternationalVerificationPage />} />
 
                 {/* Catch-all */}
                 <Route path="*" element={<Navigate to="/" replace />} />

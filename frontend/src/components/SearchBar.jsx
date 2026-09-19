@@ -12,6 +12,7 @@ export const AIRPORTS = [
   { code: 'MAA', city: 'Chennai', name: 'Chennai Intl (MAA)', region: 'South' },
   { code: 'GOI', city: 'Goa', name: 'Dabolim / Mopa (GOI)', region: 'West' },
   { code: 'PNQ', city: 'Pune', name: 'Pune Airport (PNQ)', region: 'West' },
+  { code: 'YYZ', city: 'Toronto', name: 'Toronto Pearson Intl (YYZ)', region: 'International' },
 ];
 
 export const CABIN_CLASSES = [
@@ -62,6 +63,7 @@ export default function SearchBar({ compact = false }) {
     { from: 'DEL', to: 'BLR', label: 'Delhi ⇄ Bengaluru' },
     { from: 'BOM', to: 'BLR', label: 'Mumbai ⇄ Bengaluru' },
     { from: 'DEL', to: 'GOI', label: 'Delhi ⇄ Goa' },
+    { from: 'DEL', to: 'YYZ', label: 'Delhi ⇄ Toronto' },
   ];
 
   return (

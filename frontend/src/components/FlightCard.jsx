@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Plane, ArrowRight, ShieldCheck, Luggage, TrendingDown, AlertTriangle, CheckCircle2, Armchair } from 'lucide-react';
 import { useBooking } from '../context/BookingContext.jsx';
+import TransitInfoSection from './TransitInfoSection.jsx';
+import { getOfferTransitInfo } from '../services/transitService.js';
 
 export default function FlightCard({ offer }) {
   const navigate = useNavigate();
@@ -35,6 +37,7 @@ export default function FlightCard({ offer }) {
   const isGreatDeal = airfareIndex?.dealRating === 'GREAT_DEAL';
   const isAnomaly = airfareIndex?.isAnomaly;
   const cabinDisplay = (cabinClass || 'economy').replace('_', ' ').toUpperCase();
+  const transitInfo = getOfferTransitInfo(offer);
 
   return (
     <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs hover:border-slate-300 hover:shadow-md transition relative">
@@ -132,6 +135,10 @@ export default function FlightCard({ offer }) {
           </button>
         </div>
       </div>
+
+      {transitInfo && (
+        <TransitInfoSection transitInfo={transitInfo} compact />
+      )}
     </div>
   );
 }

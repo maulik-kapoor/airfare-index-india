@@ -181,6 +181,165 @@ function generateRealisticOffers({ origin, destination, departureDate, passenger
 }
 
 /**
+ * Predefined routes with Transit & Visa Requirements
+ * ROUTE 1: DEL -> AMS -> MSP -> YYZ (Amsterdam & Minneapolis transits)
+ * ROUTE 2: DEL -> CDG -> AMS -> YYZ (Paris & Amsterdam transits)
+ */
+export const PREDEFINED_TRANSIT_ROUTES = {
+  'DEL-AMS-MSP-YYZ': {
+    routeKey: 'DEL-AMS-MSP-YYZ',
+    routeDisplay: 'Delhi → Amsterdam → Minneapolis → Toronto',
+    stops: 2,
+    stopover: 'Amsterdam (AMS) & Minneapolis (MSP)',
+    transits: [
+      { flag: '🇳🇱', label: 'Amsterdam, Netherlands', code: 'AMS', country: 'Netherlands' },
+      { flag: '🇺🇸', label: 'Minneapolis, United States', code: 'MSP', country: 'United States' },
+    ],
+    finalDestination: 'Toronto, Canada',
+    destinationCode: 'YYZ',
+    originCode: 'DEL',
+    message: "This itinerary includes transit through the Netherlands and the United States. Transit and immigration requirements may depend on the passenger's nationality, passport, visa/residence status and itinerary conditions.",
+    authorityAdvisory: 'Transit requirements should be verified with the relevant official immigration authority before travel.',
+  },
+  'DEL-CDG-AMS-YYZ': {
+    routeKey: 'DEL-CDG-AMS-YYZ',
+    routeDisplay: 'Delhi → Paris → Amsterdam → Toronto',
+    stops: 2,
+    stopover: 'Paris (CDG) & Amsterdam (AMS)',
+    transits: [
+      { flag: '🇫🇷', label: 'Paris, France', code: 'CDG', country: 'France' },
+      { flag: '🇳🇱', label: 'Amsterdam, Netherlands', code: 'AMS', country: 'Netherlands' },
+    ],
+    finalDestination: 'Toronto, Canada',
+    destinationCode: 'YYZ',
+    originCode: 'DEL',
+    message: "This itinerary includes transit through France and the Netherlands. Transit and immigration requirements may depend on the passenger's nationality, passport, visa/residence status and itinerary conditions.",
+    authorityAdvisory: 'Transit requirements should be verified with the relevant official immigration authority before travel.',
+  },
+};
+
+export function generatePredefinedTransitOffers({
+  origin = 'DEL',
+  destination = 'YYZ',
+  departureDate = '2026-10-15',
+  passengers = 1,
+  cabinClass = 'economy',
+}) {
+  const cabinMultipliers = {
+    economy: 1.0,
+    premium_economy: 1.45,
+    business: 2.35,
+    first: 3.8,
+  };
+  const classMultiplier = cabinMultipliers[cabinClass] || 1.0;
+  const cabinBaggage = {
+    economy: '2 x 23kg Checked + 7kg Cabin',
+    premium_economy: '2 x 23kg Checked + 10kg Cabin (Priority Boarding)',
+    business: '2 x 32kg Checked + 14kg Cabin (Lounge Access)',
+    first: '3 x 32kg Checked + 18kg Cabin (Private Suite)',
+  };
+
+  const rawRoute1Price = Math.round(64500 * classMultiplier * passengers);
+  const taxes1 = Math.round(rawRoute1Price * 0.15);
+  const fees1 = 100 * passengers;
+  const baseFare1 = rawRoute1Price - taxes1 - fees1;
+
+  const offer1Id = 'predefined_del_ams_msp_yyz';
+  const offer1 = {
+    id: offer1Id,
+    offerId: offer1Id,
+    routeCode: 'DEL-AMS-MSP-YYZ',
+    airline: 'KLM / Delta Air Lines',
+    airlineCode: 'KL',
+    logoUrl: 'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/KL.svg',
+    flightNumber: 'KL 872 / DL 142',
+    aircraft: 'Boeing 777-300ER / Airbus A330',
+    origin: 'DEL',
+    destination: 'YYZ',
+    departureDate,
+    departure: '03:15 AM',
+    arrival: '06:45 PM',
+    departureTime: '03:15',
+    arrivalTime: '18:45',
+    duration: '24h 00m',
+    stops: 2,
+    stopover: 'Amsterdam (AMS) & Minneapolis (MSP)',
+    baggage: cabinBaggage[cabinClass] || '2 x 23kg Checked + 7kg Cabin',
+    cabinClass,
+    passengersCount: passengers,
+    price: rawRoute1Price,
+    currency: 'INR',
+    fareBreakdown: {
+      baseFare: baseFare1,
+      taxes: taxes1,
+      fees: fees1,
+      total: rawRoute1Price,
+    },
+    expiresAt: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+    createdAt: new Date().toISOString(),
+    airfareIndex: {
+      priceIndex: 94,
+      dealRating: 'GREAT_DEAL',
+      dealLabel: 'Good Value',
+      historicalMedian: 68500,
+    },
+    transitInfo: PREDEFINED_TRANSIT_ROUTES['DEL-AMS-MSP-YYZ'],
+  };
+
+  const rawRoute2Price = Math.round(62800 * classMultiplier * passengers);
+  const taxes2 = Math.round(rawRoute2Price * 0.15);
+  const fees2 = 100 * passengers;
+  const baseFare2 = rawRoute2Price - taxes2 - fees2;
+
+  const offer2Id = 'predefined_del_cdg_ams_yyz';
+  const offer2 = {
+    id: offer2Id,
+    offerId: offer2Id,
+    routeCode: 'DEL-CDG-AMS-YYZ',
+    airline: 'Air France / KLM',
+    airlineCode: 'AF',
+    logoUrl: 'https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/AF.svg',
+    flightNumber: 'AF 225 / KL 1234',
+    aircraft: 'Airbus A350-900 / Boeing 787',
+    origin: 'DEL',
+    destination: 'YYZ',
+    departureDate,
+    departure: '01:40 AM',
+    arrival: '04:30 PM',
+    departureTime: '01:40',
+    arrivalTime: '16:30',
+    duration: '23h 20m',
+    stops: 2,
+    stopover: 'Paris (CDG) & Amsterdam (AMS)',
+    baggage: cabinBaggage[cabinClass] || '2 x 23kg Checked + 7kg Cabin',
+    cabinClass,
+    passengersCount: passengers,
+    price: rawRoute2Price,
+    currency: 'INR',
+    fareBreakdown: {
+      baseFare: baseFare2,
+      taxes: taxes2,
+      fees: fees2,
+      total: rawRoute2Price,
+    },
+    expiresAt: new Date(Date.now() + 60 * 60 * 1000).toISOString(),
+    createdAt: new Date().toISOString(),
+    airfareIndex: {
+      priceIndex: 92,
+      dealRating: 'GREAT_DEAL',
+      dealLabel: 'Great Deal',
+      historicalMedian: 68500,
+    },
+    transitInfo: PREDEFINED_TRANSIT_ROUTES['DEL-CDG-AMS-YYZ'],
+  };
+
+  offerCache.set(offer1Id, offer1);
+  offerCache.set(offer2Id, offer2);
+
+  return [offer1, offer2];
+}
+
+/**
  * Search Flights via Duffel API (with sandbox/mock fallback)
  */
 export async function searchFlights({
@@ -193,6 +352,17 @@ export async function searchFlights({
 }) {
   const normOrigin = origin.trim().toUpperCase();
   const normDest = destination.trim().toUpperCase();
+
+  // Return the two predefined transit routes for DEL -> YYZ
+  if (normOrigin === 'DEL' && normDest === 'YYZ') {
+    return generatePredefinedTransitOffers({
+      origin: normOrigin,
+      destination: normDest,
+      departureDate,
+      passengers: Number(passengers) || 1,
+      cabinClass,
+    });
+  }
 
   // Try live Duffel API if client initialized
   if (duffelClient) {
@@ -299,6 +469,14 @@ export async function searchFlights({
  * (Duffel best practice: always fetch the latest offer before booking)
  */
 export async function getOfferDetails(offerId) {
+  if (offerId.startsWith('predefined_del_')) {
+    if (!offerCache.has(offerId)) {
+      generatePredefinedTransitOffers({});
+    }
+    const cached = offerCache.get(offerId);
+    if (cached) return cached;
+  }
+
   const isMock = offerId.startsWith('mock_');
   if (duffelClient && !isMock) {
     try {

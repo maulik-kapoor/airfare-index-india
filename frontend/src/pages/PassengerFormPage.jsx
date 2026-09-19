@@ -73,7 +73,12 @@ export default function PassengerFormPage() {
     }
 
     setPassengers([formData]);
-    navigate('/seat-selection');
+    const isInternational = Boolean(selectedOffer?.transitInfo || selectedOffer?.destination === 'YYZ' || selectedOffer?.origin === 'YYZ');
+    if (isInternational) {
+      navigate('/international-verification');
+    } else {
+      navigate('/seat-selection');
+    }
   };
 
   return (

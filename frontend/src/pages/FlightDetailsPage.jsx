@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Plane, ShieldCheck, ArrowRight, Luggage, AlertCircle, Sparkles, CheckCircle2, ChevronLeft } from 'lucide-react';
+import { Plane, ShieldCheck, ArrowRight, Luggage, AlertCircle, Sparkles, CheckCircle2, ChevronLeft, AlertTriangle } from 'lucide-react';
 import { useBooking } from '../context/BookingContext.jsx';
 import api from '../services/api.js';
+import TransitInfoSection from '../components/TransitInfoSection.jsx';
+import TransitRequirementsModal from '../components/TransitRequirementsModal.jsx';
+import { getOfferTransitInfo } from '../services/transitService.js';
 
 export default function FlightDetailsPage() {
   const { offerId } = useParams();
@@ -12,6 +15,8 @@ export default function FlightDetailsPage() {
   const [offer, setOffer] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showTransitWarningModal, setShowTransitWarningModal] = useState(false);
+  const [showAdvisoryModal, setShowAdvisoryModal] = useState(false);
 
   useEffect(() => {
     async function loadOffer() {
@@ -67,6 +72,15 @@ export default function FlightDetailsPage() {
   const fees = offer.fareBreakdown?.fees || 100;
   const total = offer.price;
   const cabinDisplay = (offer.cabinClass || 'economy').replace('_', ' ').toUpperCase();
+  const transitInfo = getOfferTransitInfo(offer);
+
+  const handleContinue = () => {
+    if (transitInfo) {
+      setShowTransitWarningModal(true);
+    } else {
+      navigate('/passenger-details');
+    }
+  };
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -151,6 +165,11 @@ export default function FlightDetailsPage() {
             </div>
           </div>
 
+          {/* Transit Information Section for Predefined Routes */}
+          {transitInfo && (
+            <TransitInfoSection transitInfo={transitInfo} />
+          )}
+
           {/* Airfare Index Insight Card */}
           <div className="bg-sky-50/60 p-5 rounded-2xl border border-sky-200">
             <div className="flex items-center space-x-2 text-sky-800 text-xs font-bold mb-1.5">
@@ -196,8 +215,8 @@ export default function FlightDetailsPage() {
             </div>
 
             <button
-              onClick={() => navigate('/passenger-details')}
-              className="mt-6 w-full py-3 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl flex items-center justify-center space-x-2 shadow-sm transition active:scale-98"
+              onClick={handleContinue}
+              className="mt-6 w-full py-3 bg-sky-600 hover:bg-sky-700 text-white font-semibold rounded-xl flex items-center justify-center space-x-2 shadow-sm transition active:scale-98 cursor-pointer"
             >
               <span>Continue to Passenger Details</span>
               <ArrowRight className="w-4 h-4" />
@@ -209,6 +228,90 @@ export default function FlightDetailsPage() {
           </div>
         </div>
       </div>
+
+      {/* Transit Warning Notice before proceeding to Passenger Details */}
+      {showTransitWarningModal && transitInfo && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
+          <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+            <div className="px-6 py-4 bg-amber-500/10 border-b border-amber-200 flex items-center justify-between">
+              <div className="flex items-center space-x-2.5">
+                <div className="w-8 h-8 rounded-lg bg-amber-100 border border-amber-300 flex items-center justify-center text-amber-800">
+                  <AlertTriangle className="w-4 h-4" />
+                </div>
+                <div>
+                  <h2 className="text-sm font-bold text-slate-900">⚠ TRANSIT INFORMATION NOTICE</h2>
+                  <p className="text-[11px] text-slate-500">Notice before proceeding with booking</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 space-y-4 text-xs text-slate-700">
+              <div>
+                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Route:</span>
+                <p className="font-bold text-slate-900 text-sm mt-0.5">{transitInfo.routeDisplay}</p>
+              </div>
+
+              <div>
+                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Stops:</span>
+                <p className="font-semibold text-slate-800 text-xs mt-0.5">{transitInfo.stops}</p>
+              </div>
+
+              <div>
+                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1">Transit:</span>
+                <div className="space-y-1">
+                  {transitInfo.transits?.map((t, idx) => (
+                    <div key={idx} className="font-semibold text-slate-800 flex items-center">
+                      <span className="mr-1.5 text-sm">{t.flag}</span>
+                      <span>{t.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200 leading-relaxed text-slate-700 space-y-2">
+                <p>"{transitInfo.message}"</p>
+                <p className="font-semibold text-amber-900">
+                  "Transit requirements should be verified with the relevant official immigration authority before travel."
+                </p>
+              </div>
+            </div>
+
+            <div className="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowTransitWarningModal(false);
+                  setShowAdvisoryModal(true);
+                }}
+                className="w-full sm:w-auto px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 font-semibold text-xs transition cursor-pointer"
+              >
+                Check Transit Requirements
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  setShowTransitWarningModal(false);
+                  navigate('/international-verification');
+                }}
+                className="w-full sm:w-auto px-5 py-2 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-semibold text-xs transition active:scale-98 cursor-pointer flex items-center justify-center space-x-1.5"
+              >
+                <span>Acknowledge & Continue to Verification Gate</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Official Requirements Advisory Modal */}
+      {showAdvisoryModal && transitInfo && (
+        <TransitRequirementsModal
+          isOpen={showAdvisoryModal}
+          onClose={() => setShowAdvisoryModal(false)}
+          transitInfo={transitInfo}
+        />
+      )}
     </div>
   );
 }

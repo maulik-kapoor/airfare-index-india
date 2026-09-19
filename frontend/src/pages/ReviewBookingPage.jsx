@@ -2,6 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Plane, User, CreditCard, ShieldCheck, ChevronLeft, ArrowRight, CheckCircle2, Utensils, Luggage } from 'lucide-react';
 import { useBooking } from '../context/BookingContext.jsx';
+import TransitInfoSection from '../components/TransitInfoSection.jsx';
+import { getOfferTransitInfo } from '../services/transitService.js';
 
 export default function ReviewBookingPage() {
   const navigate = useNavigate();
@@ -37,6 +39,7 @@ export default function ReviewBookingPage() {
   const total = selectedOffer.price + seatFee + baggageFee;
 
   const cabinDisplay = (selectedOffer.cabinClass || 'economy').replace('_', ' ').toUpperCase();
+  const transitInfo = getOfferTransitInfo(selectedOffer);
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -86,6 +89,13 @@ export default function ReviewBookingPage() {
           </div>
         </div>
 
+        {/* Transit Information for Predefined Routes */}
+        {transitInfo && (
+          <div className="p-6 border-b border-slate-100 bg-amber-50/20">
+            <TransitInfoSection transitInfo={transitInfo} />
+          </div>
+        )}
+
         {/* Passenger & Assigned Seat Summary */}
         <div className="p-6 border-b border-slate-100">
           <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 mb-3 flex items-center">
@@ -117,6 +127,21 @@ export default function ReviewBookingPage() {
               <span className="font-medium text-slate-800 mt-0.5 block">{mealInfo}</span>
             </div>
           </div>
+
+          {traveler.holdPnr && (
+            <div className="mt-3 bg-sky-50/70 border border-sky-200 rounded-xl px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 text-xs">
+              <div className="flex items-center space-x-2">
+                <span className="text-slate-600 font-medium">Active Booking Hold:</span>
+                <span className="font-mono font-bold text-sky-800 bg-sky-100 border border-sky-300 px-2 py-0.5 rounded text-xs tracking-wider">
+                  {traveler.holdPnr}
+                </span>
+              </div>
+              <div className="flex items-center space-x-1.5 text-emerald-800 font-semibold text-xs bg-emerald-100/80 border border-emerald-300 px-2.5 py-0.5 rounded-full">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span>Transit Verification: APPROVED</span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Baggage & Inclusions */}
