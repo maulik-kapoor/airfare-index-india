@@ -28,11 +28,11 @@ export default function PassengerFormPage() {
 
   const [formData, setFormData] = useState(
     passengers[0] || {
-      firstName: 'Arham',
-      lastName: 'Goyal',
+      firstName: 'Tech',
+      lastName: 'Titans',
       dateOfBirth: '2004-05-14',
       gender: 'male',
-      email: 'arham@example.com',
+      email: 'techtitans@example.com',
       phone: '+91 9876543210',
     }
   );
@@ -48,11 +48,11 @@ export default function PassengerFormPage() {
 
   const handleFillDemo = () => {
     setFormData({
-      firstName: 'Arham',
-      lastName: 'Goyal',
+      firstName: 'Tech',
+      lastName: 'Titans',
       dateOfBirth: '2004-05-14',
       gender: 'male',
-      email: 'arham@example.com',
+      email: 'techtitans@example.com',
       phone: '+91 9876543210',
     });
   };
@@ -128,7 +128,7 @@ export default function PassengerFormPage() {
                   type="text"
                   value={formData.firstName}
                   onChange={(e) => handleInputChange('firstName', e.target.value)}
-                  placeholder="e.g. Arham"
+                  placeholder="e.g. Rahul"
                   className={`w-full bg-slate-50 border ${
                     errors.firstName ? 'border-rose-400 bg-rose-50' : 'border-slate-300'
                   } rounded-xl px-3 py-2 text-slate-900 text-sm focus:outline-none focus:border-sky-600 focus:bg-white`}
@@ -144,7 +144,7 @@ export default function PassengerFormPage() {
                   type="text"
                   value={formData.lastName}
                   onChange={(e) => handleInputChange('lastName', e.target.value)}
-                  placeholder="e.g. Goyal"
+                  placeholder="e.g. Sharma"
                   className={`w-full bg-slate-50 border ${
                     errors.lastName ? 'border-rose-400 bg-rose-50' : 'border-slate-300'
                   } rounded-xl px-3 py-2 text-slate-900 text-sm focus:outline-none focus:border-sky-600 focus:bg-white`}
@@ -198,7 +198,7 @@ export default function PassengerFormPage() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    placeholder="arham@example.com"
+                    placeholder="traveler@example.com"
                     className={`w-full bg-slate-50 border ${
                       errors.email ? 'border-rose-400 bg-rose-50' : 'border-slate-300'
                     } rounded-xl pl-9 pr-3 py-2 text-slate-900 text-sm focus:outline-none focus:border-sky-600 focus:bg-white`}

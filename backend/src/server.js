@@ -11,7 +11,7 @@ import analyticsRoutes from './routes/analyticsRoutes.js';
 
 const app = express();
 
-// Database initialization
+// Database initialization (MongoDB Atlas)
 connectDB();
 
 // Middlewares

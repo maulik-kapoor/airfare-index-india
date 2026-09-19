@@ -81,9 +81,9 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <div className="hidden sm:flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 text-xs">
               <div className="w-5 h-5 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center text-[10px] font-bold">
-                {user ? user.name.charAt(0) : 'A'}
+                {user ? user.name.charAt(0) : 'T'}
               </div>
-              <span className="font-medium">{user ? user.name : 'Passenger / Demo'}</span>
+              <span className="font-medium">{user ? user.name : 'Tech Titans'}</span>
             </div>
 
             {/* Mobile Hamburger Button */}

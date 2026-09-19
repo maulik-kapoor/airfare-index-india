@@ -24,8 +24,8 @@ export const AuthProvider = ({ children }) => {
         // Default demo traveler identity for frictionless testing
         setUser({
           id: 'demo_user',
-          name: 'Arham Goyal',
-          email: 'arham@example.com',
+          name: 'Tech Titans',
+          email: 'techtitans@example.com',
           phone: '+91 9876543210',
         });
       }

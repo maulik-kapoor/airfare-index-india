@@ -7,7 +7,6 @@ import {
   Clock,
   ShieldCheck,
   ArrowRight,
-  Sparkles,
   CheckCircle2,
   Armchair,
 } from 'lucide-react';
@@ -68,10 +67,6 @@ export default function HomePage() {
       <section className="bg-white border-b border-slate-200 pt-12 pb-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-8">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-semibold mb-3">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Full-Stack Airline Platform</span>
-            </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
               Airfare Price Index & Airline Flight Booking
             </h1>

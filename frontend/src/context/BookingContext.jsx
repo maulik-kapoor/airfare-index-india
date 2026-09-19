@@ -15,11 +15,11 @@ export const BookingProvider = ({ children }) => {
   const [selectedOffer, setSelectedOffer] = useState(null);
   const [passengers, setPassengers] = useState([
     {
-      firstName: 'Arham',
-      lastName: 'Goyal',
+      firstName: 'Tech',
+      lastName: 'Titans',
       dateOfBirth: '2004-05-14',
       gender: 'male',
-      email: 'arham@example.com',
+      email: 'techtitans@example.com',
       phone: '+91 9876543210',
       seat: '12A',
       meal: 'Complimentary Veg Meal',

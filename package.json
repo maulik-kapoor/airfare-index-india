@@ -13,6 +13,6 @@
     "concurrently": "^9.1.2"
   },
   "keywords": ["airfare-index", "duffel", "flight-booking", "analytics", "razorpay"],
-  "author": "Arham",
+  "author": "Tech Titans",
   "license": "ISC"
 }
