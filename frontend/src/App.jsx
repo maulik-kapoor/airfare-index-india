@@ -12,6 +12,7 @@ import BookingWindowPage from './pages/BookingWindowPage.jsx';
 import AirlineOtaAnalyticsPage from './pages/AirlineOtaAnalyticsPage.jsx';
 import AnomaliesPage from './pages/AnomaliesPage.jsx';
 import RoundTripPage from './pages/RoundTripPage.jsx';
+import HeatmapPage from './pages/HeatmapPage.jsx';
 import BookFlightsPage from './pages/BookFlightsPage.jsx';
 import SearchResultsPage from './pages/SearchResultsPage.jsx';
 import FlightDetailsPage from './pages/FlightDetailsPage.jsx';
@@ -36,6 +37,7 @@ export default function App() {
                 <Route path="/analytics" element={<Navigate to="/" replace />} />
                 <Route path="/route-explorer" element={<RouteExplorerPage />} />
                 <Route path="/booking-windows" element={<BookingWindowPage />} />
+                <Route path="/heatmap" element={<HeatmapPage />} />
                 <Route path="/airline-ota-analytics" element={<AirlineOtaAnalyticsPage />} />
                 <Route path="/anomalies" element={<AnomaliesPage />} />
                 <Route path="/roundtrip-analytics" element={<RoundTripPage />} />

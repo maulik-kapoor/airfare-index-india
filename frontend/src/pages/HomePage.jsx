@@ -21,6 +21,7 @@ import {
   Cell,
 } from 'recharts';
 import SearchBar from '../components/SearchBar.jsx';
+import AirfareHeatmap from '../components/AirfareHeatmap.jsx';
 import api from '../services/api.js';
 
 export default function HomePage() {
@@ -198,6 +199,11 @@ export default function HomePage() {
               <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
+        </section>
+
+        {/* Multi-Dimensional Airfare Heatmap Matrix */}
+        <section>
+          <AirfareHeatmap defaultRoute="ALL" />
         </section>
 
         {/* 3 Simple Value Propositions */}

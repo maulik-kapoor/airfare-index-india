@@ -11,6 +11,7 @@ import {
   Menu,
   X,
   User,
+  Flame,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext.jsx';
 
@@ -24,6 +25,7 @@ export default function Navbar() {
     { name: 'Price Overview', path: '/', icon: BarChart3 },
     { name: 'Route Analytics', path: '/route-explorer', icon: Compass },
     { name: 'Best Time to Book', path: '/booking-windows', icon: Clock },
+    { name: 'Price Heatmap', path: '/heatmap', icon: Flame },
     { name: 'Airlines & OTAs', path: '/airline-ota-analytics', icon: Building2 },
     { name: 'Price Anomalies', path: '/anomalies', icon: AlertTriangle },
     { name: 'My Bookings', path: '/my-bookings', icon: Ticket },

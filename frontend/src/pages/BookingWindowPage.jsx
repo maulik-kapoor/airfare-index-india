@@ -11,6 +11,7 @@ import {
   Cell,
 } from 'recharts';
 import api from '../services/api.js';
+import AirfareHeatmap from '../components/AirfareHeatmap.jsx';
 
 export default function BookingWindowPage() {
   const [windows, setWindows] = useState([]);
@@ -143,6 +144,11 @@ export default function BookingWindowPage() {
             </tbody>
           </table>
         </div>
+      </div>
+
+      {/* Multi-Dimensional Timing Heatmap Matrix */}
+      <div className="mt-8">
+        <AirfareHeatmap defaultRoute="ALL" />
       </div>
     </div>
   );

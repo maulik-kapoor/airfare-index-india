@@ -9,6 +9,7 @@ import {
   getRoundTripAnalysis,
   getTravelDateTrends,
   getMethodology,
+  getHeatmapAnalytics,
 } from '../services/airfareIndexService.js';
 
 export async function handleGetKPIs(req, res) {
@@ -99,6 +100,16 @@ export async function handleGetMethodology(req, res) {
     return res.status(200).json({ success: true, data });
   } catch (error) {
     return res.status(500).json({ success: false, message: 'Failed to get methodology.' });
+  }
+}
+
+export async function handleGetHeatmap(req, res) {
+  try {
+    const route = req.query.route || 'ALL';
+    const data = getHeatmapAnalytics(route);
+    return res.status(200).json({ success: true, data });
+  } catch (error) {
+    return res.status(500).json({ success: false, message: 'Failed to generate heatmap analytics.' });
   }
 }
 

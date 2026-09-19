@@ -11,6 +11,7 @@ import {
   handleGetTravelDates,
   handleGetMethodology,
   handleGetAnalyticsSummary,
+  handleGetHeatmap,
 } from '../controllers/analyticsController.js';
 
 const router = Router();
@@ -26,5 +27,6 @@ router.get('/anomalies', handleGetAnomalies);
 router.get('/round-trip', handleGetRoundTrip);
 router.get('/travel-dates', handleGetTravelDates);
 router.get('/methodology', handleGetMethodology);
+router.get('/heatmap', handleGetHeatmap);
 
 export default router;
